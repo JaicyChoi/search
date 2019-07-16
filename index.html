@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>마물 검색</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+</head>
+<body>
+    <div id='layer'>
+      <div id='layer_content'>
+      </div>
+    </div>
+  <header>
+    <h1 class="title">Search</h1>
+  </header>
+    <form class="search-form" name="search">
+      <input class="search" placeholder="마물 이름, 드랍 아이템, ..." type="text" name="keywords" onkeypress="press(this.form)">
+      <button class="submit" id="search_button">Go</button>
+    </form>
+    <div class="results">
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
