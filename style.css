@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300i,400i&display=swap');
+
+body {
+    background-color: rgb(30, 32, 36)
+}
+
+#layer {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+img {
+    width: 60%;
+    display: block;
+    margin: 150px auto;
+}
+/*
+.map {
+}
+*/
+.name {
+    color: #11ABB0;
+}
+
+a {
+    text-decoration: none;
+    color: #11ABB0;
+}
+a:hover{
+    font-weight: bold;
+}
+
+input {
+    padding-left: 15px;
+    border: none;
+    background-color:  rgb(68, 73, 85);
+    border-radius: 15px;
+    color: rgba(255, 255, 255, 0.651);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+input:focus{
+    outline:none;
+    color: white;
+    background-color: rgb(68, 73, 85)
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+.search-form {
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+
+.search {
+    height: 50px;
+    width: 40%;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.submit {
+    display:none;
+    font-family: 'Orbitron', sans-serif;
+    font-size:20px;
+    border: none;
+    color: #fff;
+    background-color: #11ABB0;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: -5px;
+    vertical-align: middle;
+}
+
+.results {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+
+.not_found {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.total {
+    text-align: right;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(194, 200, 206);
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.show_table {
+    border-top: 1px solid rgb(62, 66, 88);
+    border-bottom: 1px solid rgb(62, 66, 88);
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.show_table tr:hover{
+    background-color: rgba(68, 73, 85, 0.356);
+}
+
+.td_level {
+    width: 7%;
+    text-align: right;
+    padding-right:10px;
+    font-size: 13px;
+    color: rgba(240, 248, 255, 0.733);
+}
+.td_name {
+    width: 25%;
+    text-align: left;
+    padding-left: 10px;
+}
+.td_name:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: aliceblue;
+    transition: all 0.5s linear;
+}
+.td_location {
+    width: 25%;
+    text-align: center;
+}
+.td_coordinate {
+    width: 20%;
+    text-align: left;
+    color: rgba(240, 248, 255, 0.733);
+}
+.td_drop {
+    width: 23%;
+    text-align: left;
+    line-height: 160%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:10px;
+}
+#drop:hover{
+    background-color: aliceblue;
+    transition: all 0.5s ease;
+}
