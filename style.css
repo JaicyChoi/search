@@ -3,7 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300i,400i&display=swap');
 
 body {
-    background-color: rgb(30, 32, 36)
+    background-color: rgb(30, 32, 36);
+    height: 100;
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #layer {
@@ -18,11 +23,33 @@ body {
     opacity: 0;
     transition: all 0.5s ease;
 }
-
+#layer_content {
+    height: 100%;
+    overflow: scroll;
+}
+.info {
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:20px;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 15px rgb(255, 223, 165);
+    position: absolute;
+    top: 68px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(49, 49, 49, 0.9);
+}
 img {
     width: 60%;
+    max-width: 920px;
     display: block;
-    margin: 150px auto;
+    /*margin: 100px auto;*/
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-repeat: no-repeat;
 }
 /*
 .map {
@@ -40,10 +67,14 @@ a:hover{
     font-weight: bold;
 }
 
+#drop{
+    color:rgb(124, 185, 187);
+}
+
 input {
     padding-left: 15px;
     border: none;
-    background-color:  rgb(68, 73, 85);
+    background-color:  rgba(68, 73, 85, 0.74);
     border-radius: 15px;
     color: rgba(255, 255, 255, 0.651);
     font-family: 'Nanum Gothic', sans-serif;
@@ -56,19 +87,19 @@ input:focus{
 
 .title {
     font-family: 'Orbitron', sans-serif;
-    font-size: 60px;
+    font-size: 65px;
     color: white;
     text-align: center;
 }
 .search-form {
     text-align: center;
-    margin-top: -15px;
+    margin-top: -20px;
     margin-bottom: 40px;
 }
 
 .search {
     height: 50px;
-    width: 40%;
+    width: 43%;
     vertical-align: middle;
     font-size: 25px;
 }
@@ -89,7 +120,7 @@ input:focus{
 }
 
 .results {
-    width: 70%;
+    width: 72%;
     margin: 0 auto;
     margin-bottom: 50px;
     color: aliceblue;
@@ -125,14 +156,14 @@ input:focus{
 }
 
 .td_level {
-    width: 7%;
+    width: 8%;
     text-align: right;
     padding-right:10px;
     font-size: 13px;
     color: rgba(240, 248, 255, 0.733);
 }
 .td_name {
-    width: 25%;
+    width: 27%;
     text-align: left;
     padding-left: 10px;
 }
@@ -147,12 +178,12 @@ input:focus{
     text-align: center;
 }
 .td_coordinate {
-    width: 20%;
+    width: 15%;
     text-align: left;
     color: rgba(240, 248, 255, 0.733);
 }
 .td_drop {
-    width: 23%;
+    width: 25%;
     text-align: left;
     line-height: 160%;
     padding-top: 10px;
