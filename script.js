@@ -119,7 +119,7 @@ function viewMap(){
     
     let img = document.createElement('img');
     img.classList.add('.map');
-    img.src = 'map/' + this.innerText + '.jpg'
+    img.src = 'map/' + this.innerText + '.JPG'
 
     let info = document.createElement('div');
     info.classList.add('info');
