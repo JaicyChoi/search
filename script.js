@@ -3,6 +3,7 @@ let search = document.querySelector('.search');
 let submit = document.querySelector('.submit');
 let resultsElement = document.querySelector('.results');
 let layer = document.querySelector('#layer');
+let layer_content = document.querySelector('#layer_content');
 
 function press(key){
     if(key.keyCode === 13)
@@ -21,15 +22,17 @@ submit.addEventListener('click', (event) => {
     resultsElement.innerHTML = '';
     let formData = new FormData(form);
     let keywords = formData.get('keywords');
-    
-    if( keywords.trim().length === 0 ) not_found();
+    let exception = /[a-zA-Z/?=]/;
+
+    if( keywords.trim().length === 0 || exception.test(keywords) || keywords === '.' ) not_found();
     else
     {
         let count = 0;
         for( let key in DATA )
         {
             for( let i = 0 ; i < DATA[key].length ; i++ )
-                if( DATA[key][i].level.includes(keywords) || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) || DATA[key][i].drop.includes(keywords) )
+                if( DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) || 
+                ( typeof Number(keywords) !== 'number' && DATA[key][i].drop.includes(keywords) ) )
                 {
                     let table = document.createElement('table');
                     table.classList.add('show_table');
@@ -58,7 +61,7 @@ submit.addEventListener('click', (event) => {
                     let td_drop = document.createElement('td');
                     td_drop.classList.add('td_drop');
                     td_drop.innerHTML = DATA[key][i].drop;
-                    if( !td_drop.innerHTML.includes('-') )
+                    if( !td_drop.innerHTML.includes('&nbsp') )
                         td_drop.id='drop';
                     tr.appendChild(td_drop);
 
@@ -116,13 +119,31 @@ function viewMap(){
     
     let img = document.createElement('img');
     img.classList.add('.map');
-    img.src = 'map/' + this.innerText + '.png'
+    img.src = 'map/' + this.innerText + '.jpg'
 
-    layer.appendChild(img);
+    let info = document.createElement('div');
+    info.classList.add('info');
+    info.innerText = this.innerText + ' ' + this.nextSibling.nextSibling.innerText;
+
+    layer_content.appendChild(info);
+    layer_content.appendChild(img);
+    
+    window.onkeyup = function(esc){
+        let key = esc.keyCode ? esc.keyCode : esc.which;
+
+        if( key === 27)
+        {
+            layer.style.visibility = 'hidden';
+            layer.style.opacity = 0;
+            layer_content.removeChild(info);
+            layer_content.removeChild(img);
+        }
+    }
 
     layer.onclick = function(){
         layer.style.visibility = 'hidden';
         layer.style.opacity = 0;
-        layer.removeChild(img);
+        layer_content.removeChild(info);
+        layer_content.removeChild(img);
     }
 }
