@@ -1,6 +1,6 @@
 let DATA = {
     The_Fringes: [
-        {level: '60', name: '례쉬', location: '기라바니아 변방지대', coordinate: '( 11.0, 13.6 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19930\' id=\'drop\' target=\'_blank\'>너도밤나무 원목</a>'},
+        {level: '60', name: 'The_Fringes', location: '기라바니아 변방지대', coordinate: '( 11.0, 13.6 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19930\' id=\'drop\' target=\'_blank\'>너도밤나무 원목</a>'},
         {level: '60', name: '가젤매', location: '기라바니아 변방지대', coordinate: '( 11.8, 13.3 )', drop: '&nbsp'},
         {level: '60', name: '사프리아', location: '기라바니아 변방지대', coordinate: '( 10.0, 14.6 )', drop: '&nbsp'},
         {level: '60', name: '벨로디나 사르코수쿠스', location: '기라바니아 변방지대', coordinate: '( 18.0, 11.8 )', drop: '&nbsp'},
