@@ -125,11 +125,18 @@ function viewMap(){
     
     let img = document.createElement('img');
     img.classList.add('.map');
+    let found = false;
 
     for( let key in DATA)
+    {
         for( let i = 0 ; i < DATA[key].length; i++ )
             if( DATA[key][i].name === this.innerText )
+            {
                 img.src = 'map/' + key + '/'+ this.innerText + '.jpg'
+                found = true; break;
+            }
+        if( found === true ) break;
+    }
 
     let info = document.createElement('div');
     info.classList.add('info');
