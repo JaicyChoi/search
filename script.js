@@ -24,15 +24,15 @@ submit.addEventListener('click', (event) => {
     let keywords = formData.get('keywords');
     let exception = /[a-zA-Z/?=]/;
 
-    if( keywords.trim().length === 0 || exception.test(keywords) || keywords === '.' ) not_found();
+    if( keywords.trim().length === 0 || exception.test(keywords) || keywords === '.' || 
+    Number(keywords) < 50 || Number(keywords) > 70 ) not_found();
     else
     {
         let count = 0;
         for( let key in DATA )
         {
             for( let i = 0 ; i < DATA[key].length ; i++ )
-                if( DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) || 
-                ( typeof Number(keywords) !== 'number' && DATA[key][i].drop.includes(keywords) ) )
+                if( DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) || DATA[key][i].drop.includes(keywords) )
                 {
                     let table = document.createElement('table');
                     table.classList.add('show_table');
