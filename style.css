@@ -111,6 +111,8 @@ input:focus{
 .search {
     height: 50px;
     width: 43%;
+    min-width: 400px;
+    max-width: 600px;
     vertical-align: middle;
     font-size: 25px;
 }
