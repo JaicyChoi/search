@@ -135,6 +135,7 @@ input:focus{
 
 .results {
     width: 72%;
+    max-width: 1000px; 
     margin: 0 auto;
     margin-bottom: 50px;
     color: aliceblue;
@@ -155,6 +156,7 @@ input:focus{
     color: rgb(194, 200, 206);
     margin-top: -10px;
     margin-bottom: 5px;
+    z-index: 2;
 }
 
 .show_table {
@@ -190,6 +192,7 @@ input:focus{
 .td_location {
     width: 25%;
     text-align: center;
+    color: rgba(255, 255, 255, 0.85);
 }
 .td_coordinate {
     width: 15%;
@@ -222,5 +225,5 @@ input:focus{
     color: rgba(255, 255, 255, 0.7);
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 12px;
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0.7), 0 0 7px rgb(5, 121, 255);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5), 0 0 7px rgb(5, 121, 255);
 }
