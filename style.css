@@ -23,6 +23,7 @@ body::-webkit-scrollbar {
     opacity: 0;
     transition: all 0.5s ease;
 }
+
 #layer_content {
     height: 100%;
     overflow: scroll;
@@ -32,23 +33,32 @@ body::-webkit-scrollbar {
     font-family: 'Nanum Gothic', sans-serif;
     font-size:20px;
     text-align: center;
+    width: 60%;
+    max-width: 920px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 5px 5px 0px 0px;
     text-shadow: 0 0 10px #fff, 0 0 15px rgb(255, 223, 165);
+    margin: 70px auto 0px;
+    /*
     position: absolute;
     top: 68px;
     left: 50%;
     transform: translate(-50%, 0%);
     padding: 5px 10px 5px 10px;
+    */
     background-color: rgba(49, 49, 49, 0.9);
 }
 img {
     width: 60%;
     max-width: 920px;
     display: block;
-    /*margin: 100px auto;*/
+    margin: -0px auto;
+    /*
     position: absolute;
     top: 100px;
     left: 50%;
     transform: translate(-50%, 0%);
+    */
     background-repeat: no-repeat;
 }
 /*
