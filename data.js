@@ -241,7 +241,7 @@ let DATA = {
         {level: '58', name: '고블린 조종사', location: '저지 드라바니아', coordinate: '( 31.2, 22.5 )', drop: '&nbsp'},
         {level: '58', name: 'III호 고블린탱크 E형', location: '저지 드라바니아', coordinate: '( 31.2, 22.5 )', drop: '&nbsp'},
         {level: '59', name: '오케아니스', location: '저지 드라바니아', coordinate: '( 14.0, 31.3 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12875\' id=\'drop\' target=\'_blank\'>오케아니스 고기</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12872\' id=\'drop\' target=\'_blank\'>오케아니스 알</a>'},
-        {level: '59', name: '태양거머리', location: '저지 드라바니아', coordinate: '( 31.2, 22.5 )', drop: '&nbsp'},
+        {level: '59', name: '태양거머리', location: '저지 드라바니아', coordinate: '( 14.0, 31.3 )', drop: '&nbsp'},
         {level: '59', name: '오프켄', location: '저지 드라바니아', coordinate: '( 12.7, 33.9 )', drop: '&nbsp'},
         {level: '59', name: '포록고', location: '저지 드라바니아', coordinate: '( 12.4, 34.6 )', drop: '&nbsp'},
         {level: '59', name: '비페리케라스', location: '저지 드라바니아', coordinate: '( 22.6, 37.9 )', drop: '&nbsp'},
