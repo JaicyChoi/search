@@ -73,7 +73,6 @@ let DATA = {
         {level: '62', name: '시라누이', location: '홍옥해', coordinate: '( 18.6, 7.2 )', drop: '&nbsp'},
         {level: '62', name: '큰바다뱀', location: '홍옥해', coordinate: '( 30.2, 7.7 )', drop: '&nbsp'},
         {level: '62', name: '산호게', location: '홍옥해', coordinate: '( 32.3, 3.7 )', drop: '&nbsp'},
-        {level: '62', name: '꿈고둥', location: '홍옥해', coordinate: '( 32.3, 3.7 )', drop: '&nbsp'},
         {level: '62', name: '철갑게', location: '홍옥해', coordinate: '( 35.6, 21.6 )', drop: '&nbsp'},
         {level: '63', name: '아파', location: '홍옥해', coordinate: '( 17.7, 35.3 )', drop: '&nbsp'},
         {level: '63', name: '줄가오리', location: '홍옥해', coordinate: '( 8.2, 26.6 )', drop: '&nbsp'},
@@ -81,6 +80,7 @@ let DATA = {
         {level: '63', name: '붉은등 효우에', location: '홍옥해', coordinate: '( 8.2, 26.6 )', drop: '&nbsp'},
         {level: '63', name: '붉은등 혼칸', location: '홍옥해', coordinate: '( 8.2, 26.6 )', drop: '&nbsp'},
         {level: '63', name: '거단', location: '홍옥해', coordinate: '( 8.5, 6.2 )', drop: '&nbsp'},
+        {level: '63', name: '꿈고둥', location: '홍옥해', coordinate: '( 25.3, 26.9 )', drop: '&nbsp'},
         {level: '63', name: '꿈고둥 알맹이', location: '홍옥해', coordinate: '( 25.3, 26.9 )', drop: '&nbsp'},
         {level: '63', name: '붉은뿔부리', location: '홍옥해', coordinate: '( 34.3, 23.0 )', drop: '&nbsp'}
     ],
