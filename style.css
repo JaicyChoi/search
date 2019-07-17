@@ -221,4 +221,5 @@ input:focus{
     color: rgba(255, 255, 255, 0.733);
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 12px;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.7), 0 0 7px rgb(5, 121, 255);
 }
