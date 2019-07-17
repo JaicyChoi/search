@@ -129,7 +129,7 @@ function viewMap(){
 
     if( this.nextSibling.innerText === '아지스 라' )
         img.src = 'map/Azys_Lla/' + this.innerText + '.jpg';
-    else{
+    else
         for( let key in DATA)
         {
             for( let i = 0 ; i < DATA[key].length; i++ )
@@ -140,7 +140,6 @@ function viewMap(){
                 }
             if( found === true ) break;
         }
-    }
 
     let info = document.createElement('div');
     info.classList.add('info');
