@@ -127,15 +127,19 @@ function viewMap(){
     img.classList.add('.map');
     let found = false;
 
-    for( let key in DATA)
-    {
-        for( let i = 0 ; i < DATA[key].length; i++ )
-            if( DATA[key][i].name === this.innerText )
-            {
-                img.src = 'map/' + key + '/'+ this.innerText + '.jpg'
-                found = true; break;
-            }
-        if( found === true ) break;
+    if( this.nextSibling.innerText === '아지스 라' )
+        img.src = 'map/Azys_Lla/' + this.innerText + '.jpg';
+    else{
+        for( let key in DATA)
+        {
+            for( let i = 0 ; i < DATA[key].length; i++ )
+                if( DATA[key][i].name === this.innerText )
+                {
+                    img.src = 'map/' + key + '/'+ this.innerText + '.jpg';
+                    found = true; break;
+                }
+            if( found === true ) break;
+        }
     }
 
     let info = document.createElement('div');
