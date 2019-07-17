@@ -116,7 +116,6 @@ submit.addEventListener('click', (event) => {
             resultsElement.insertBefore(div, resultsElement.childNodes[0]);
         }
     }
-    search.value = '';
 });
 
 function viewMap(){
