@@ -11,7 +11,7 @@ title.onclick = function(){
     search.value = '';
 }
 
-function press(key){
+function enter(key){
     if(key.keyCode === 13)
       search.submit();
 }
