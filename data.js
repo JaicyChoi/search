@@ -254,7 +254,7 @@ let DATA = {
         {level: '52', name: '맑은강 닝키낭카', location: '고지 드라바니아', coordinate: '( 28.5, 22.3 )', drop: '&nbsp'},
         {level: '52', name: '잠자리용 감시자', location: '고지 드라바니아', coordinate: '( 28.3, 32.3 )', drop: '&nbsp'},
         {level: '52', name: '큰뿔산양', location: '고지 드라바니아', coordinate: '( 25.7, 29.7 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12873\' id=\'drop\' target=\'_blank\'>큰뿔산양 고기</a>'},
-        {level: '52', name: '사나운 초코보', location: '고지 드라바니아', coordinate: '( 37.7, 23.8 )', drop: '&nbsp'},
+        {level: '52', name: '야생 초코보', location: '고지 드라바니아', coordinate: '( 37.7, 23.8 )', drop: '&nbsp'},
         {level: '52', name: '깃털벼룩', location: '고지 드라바니아', coordinate: '( 36.2, 24.3 )', drop: '&nbsp'},
         {level: '52', name: '멜리아', location: '고지 드라바니아', coordinate: '( 28.5, 25.4 )', drop: '&nbsp'},
         {level: '52', name: '드라바니아 에이비스', location: '고지 드라바니아', coordinate: '( 27.1, 22.9 )', drop: '&nbsp'},
