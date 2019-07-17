@@ -134,7 +134,7 @@ let DATA = {
         {level: '50', name: '난도질 조브란', location: '커르다스 서부고지', coordinate: '( 25.2, 12.5 )', drop: '&nbsp'},
         {level: '50', name: '얼음풀', location: '커르다스 서부고지', coordinate: '( 23.6, 16.1 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12637\' id=\'drop\' target=\'_blank\'>얼음풀 잎</a>'},
         {level: '50', name: '찬바람 달마수리', location: '커르다스 서부고지', coordinate: '( 31.2, 11.4 )', drop: '&nbsp'},
-        {level: '51', name: '아르케오니스', location: '커르다스 서부고지', coordinate: '( 14.9, 7.9 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12568\' id=\'drop\' target=\'_blank\'>아르케오니스 생가죽</a>'},
+        {level: '51', name: '아르케오니스', location: '커르다스 서부고지', coordinate: '( 17.0, 11.8 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12568\' id=\'drop\' target=\'_blank\'>아르케오니스 생가죽</a>'},
         {level: '51', name: '털복숭이 야크', location: '커르다스 서부고지', coordinate: '( 15.2, 17.1 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12888\' id=\'drop\' target=\'_blank\'>야크 젖</a>'},
         {level: '51', name: '북극곰', location: '커르다스 서부고지', coordinate: '( 22.8, 21.7 )', drop: '&nbsp'},
         {level: '51', name: '외로운 예티', location: '커르다스 서부고지', coordinate: '( 20.1, 32.5 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12575\' id=\'drop\' target=\'_blank\'>예티 엄니</a>'},
