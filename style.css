@@ -207,3 +207,17 @@ input:focus{
     background-color: aliceblue;
     transition: all 0.5s ease;
 }
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(30, 32, 36, 0.8);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.733);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+}
