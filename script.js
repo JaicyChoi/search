@@ -125,7 +125,12 @@ function viewMap(){
     
     let img = document.createElement('img');
     img.classList.add('.map');
-    img.src = 'map/' + this.innerText + '.JPG'
+    //img.src = 'map/' + this.innerText + '.JPG'
+
+    for( let key in DATA)
+        for( let i = 0 ; i < DATA[key].length; i++ )
+            if( DATA[key][i].name === this.innerText )
+                img.src = 'map/' + key + '/'+ this.innerText + '.JPG'
 
     let info = document.createElement('div');
     info.classList.add('info');
