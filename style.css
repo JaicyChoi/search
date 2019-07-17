@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 .info {
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
-    font-size:20px;
+    font-size:18px;
     text-align: center;
     width: 60%;
     max-width: 920px;
@@ -46,13 +46,13 @@ body::-webkit-scrollbar {
     transform: translate(-50%, 0%);
     padding: 5px 10px 5px 10px;
     */
-    background-color: rgba(49, 49, 49, 0.9);
+    background-color: rgba(55, 58, 61, 0.9);
 }
 img {
     width: 60%;
     max-width: 920px;
     display: block;
-    margin: -0px auto;
+    margin: -0px auto 30px;
     /*
     position: absolute;
     top: 100px;
