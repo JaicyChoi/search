@@ -283,14 +283,14 @@ let DATA = {
     The_Churning_Mists: [
         {level: '54', name: '로프켄', location: '드라바니아 구름바다', coordinate: '( 35.0, 33.1 )', drop: '&nbsp'},
         {level: '54', name: '상크친니', location: '드라바니아 구름바다', coordinate: '( 28.8, 32.5 )', drop: '&nbsp'},
-        {level: '54', name: '암피프테레', location: '드라바니아 구름바다', coordinate: '( 17.3, 31.3 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12572\' id=\'drop\' target=\'_blank\'>암피프테레 생가죽</a>'},
+        {level: '54', name: '암피프테레', location: '드라바니아 구름바다', coordinate: '( 16.0, 30.1 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12572\' id=\'drop\' target=\'_blank\'>암피프테레 생가죽</a>'},
         {level: '54', name: '툴리핸드', location: '드라바니아 구름바다', coordinate: '( 33.3, 15.9 )', drop: '&nbsp'},
         {level: '54', name: '워제트', location: '드라바니아 구름바다', coordinate: '( 27.4, 20.1 )', drop: '&nbsp'},
         {level: '54', name: '이끼드래곤', location: '드라바니아 구름바다', coordinate: '( 23.2, 25.1 )', drop: 
         '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12571\' id=\'drop\' target=\'_blank\'>드래곤 생가죽</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12576\' id=\'drop\' target=\'_blank\'>드래곤 송곳니</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12630\' id=\'drop\' target=\'_blank\'>용족의 피</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12627\' id=\'drop\' target=\'_blank\'>드래곤의 비늘</a>'},
         {level: '54', name: '작은 드래곤', location: '드라바니아 구름바다', coordinate: '( 20.4, 30.4 )', drop: '&nbsp'},
         {level: '54', name: '원시공룡', location: '드라바니아 구름바다', coordinate: '( 29.8, 23.9 )', drop: '&nbsp'},
-        {level: '55', name: '장로 시리크라', location: '드라바니아 구름바다', coordinate: '( 34.3, 22.1 )', drop: '&nbsp'},
+        {level: '55', name: '장로 시리크타', location: '드라바니아 구름바다', coordinate: '( 34.3, 22.1 )', drop: '&nbsp'},
         {level: '55', name: '뷔브르', location: '드라바니아 구름바다', coordinate: '( 20.4, 17.2 )', drop: '&nbsp'},
         {level: '55', name: '장로 와이번', location: '드라바니아 구름바다', coordinate: '( 24.7, 28.1 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12569\' id=\'drop\' target=\'_blank\'>와이번 생가죽</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12636\' id=\'drop\' target=\'_blank\'>와이번 날개</a>'},
         {level: '55', name: '칼날 식초전갈용', location: '드라바니아 구름바다', coordinate: '( 18.3, 21.8 )', drop: '&nbsp'},
