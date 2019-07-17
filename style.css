@@ -96,6 +96,7 @@ input:focus{
 }
 
 .title {
+    cursor: pointer;
     font-family: 'Orbitron', sans-serif;
     font-size: 65px;
     color: white;

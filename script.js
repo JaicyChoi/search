@@ -4,6 +4,12 @@ let submit = document.querySelector('.submit');
 let resultsElement = document.querySelector('.results');
 let layer = document.querySelector('#layer');
 let layer_content = document.querySelector('#layer_content');
+let title = document.querySelector('.title');
+
+title.onclick = function(){
+    resultsElement.innerHTML = '';
+    search.value = '';
+}
 
 function press(key){
     if(key.keyCode === 13)
@@ -110,6 +116,7 @@ submit.addEventListener('click', (event) => {
             resultsElement.insertBefore(div, resultsElement.childNodes[0]);
         }
     }
+    search.value = '';
 });
 
 function viewMap(){
