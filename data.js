@@ -353,7 +353,7 @@ let DATA = {
         {level: '56', hunt: true, name: '핏빛 드래곤', location: '드라바니아 구름바다', coordinate: '( 26.0, 10.1 )', drop: 
         '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12571\' id=\'drop\' target=\'_blank\'>드래곤 생가죽</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12576\' id=\'drop\' target=\'_blank\'>드래곤 송곳니</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12630\' id=\'drop\' target=\'_blank\'>용족의 피</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12627\' id=\'drop\' target=\'_blank\'>드래곤의 비늘</a>'},
         {level: '56', hunt: true, name: '변종 드래곤', location: '드라바니아 구름바다', coordinate: '( 8.1, 19.2 )', drop: '&nbsp'},
-        {level: '60', hunt: 'B', name: '허수아비 전갈', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '허수아비전갈', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'B', name: '스키탈리스', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '부네', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '아가토스', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'}
