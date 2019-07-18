@@ -196,3 +196,18 @@ function viewMap(){
         layer_content.removeChild(img);
     }
 }
+
+$(window).scroll(function(event){
+    var scroll = $(window).scrollTop();
+  if (scroll >= 50) {
+      $(".top_button").addClass("show");
+  } else {
+      $(".top_button").removeClass("show");
+  }
+});
+/*Animation anchor*/
+$('a').click(function(){
+  $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top
+  }, 1000);
+});
