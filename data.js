@@ -178,7 +178,11 @@ let DATA = {
         {level: '56', hunt: false, name: '점판암 예티', location: '커르다스 서부고지', coordinate: '( 25.5, 32.0 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12575\' id=\'drop\' target=\'_blank\'>예티 엄니</a>'},
         {level: '56', hunt: false, name: '빙결 드래곤', location: '커르다스 서부고지', coordinate: '( 14.2, 23.9 )', drop: 
         '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12571\' id=\'drop\' target=\'_blank\'>드래곤 생가죽</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12576\' id=\'drop\' target=\'_blank\'>드래곤 송곳니</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12630\' id=\'drop\' target=\'_blank\'>용족의 피</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12627\' id=\'drop\' target=\'_blank\'>드래곤의 비늘</a>'},
-        {level: '56', hunt: false, name: '얼음 조브란', location: '커르다스 서부고지', coordinate: '( 15.8, 33.0 )', drop: '&nbsp'}
+        {level: '56', hunt: false, name: '얼음 조브란', location: '커르다스 서부고지', coordinate: '( 15.8, 33.0 )', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '크루제', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '알티크', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '미르카', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '류바', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     Sea_of_Clouds: [
         {level: '50', hunt: true, name: '오브델라', location: '아발라시아 구름바다', coordinate: '( 26.2, 33.5 )', drop: '&nbsp'},
@@ -220,6 +224,10 @@ let DATA = {
         {level: '59', hunt: true, name: '총총새', location: '아발라시아 구름바다', coordinate: '( 21.2, 6.9 )', drop: '&nbsp'},
         {level: '59', hunt: true, name: '차나할레', location: '아발라시아 구름바다', coordinate: '( 10.5, 26.2 )', drop: '&nbsp'},
         {level: '59', hunt: false, name: '그리핀', location: '아발라시아 구름바다', coordinate: '( 8.4, 7.9 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12577\' id=\'drop\' target=\'_blank\'>그리핀 발톱</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12573\' id=\'drop\' target=\'_blank\'>그리핀 생가죽</a>'},
+        {level: '60', hunt: 'B', name: '스퀑크', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '무용수 사누발리', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '엔켈라도스', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '시시우틀', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     Azys_Lla: [
         {level: '59', hunt: true, name: '메라시디아 드래고네트', location: '아지스 라', coordinate: '( 6.8, 35.4 )', drop: '&nbsp'},
@@ -254,6 +262,10 @@ let DATA = {
         {level: '59', hunt: false, name: '알라그 태엽 비트', location: '아지스 라', coordinate: '( 38.8, 18.2 )', drop: '&nbsp'},
         {level: '60', hunt: false, name: '전쟁주먹', location: '아지스 라', coordinate: '( 23.9, 22.3 )', drop: '&nbsp'},
         {level: '60', hunt: false, name: '스핑크스', location: '아지스 라', coordinate: '( 23.9, 22.3 )', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '옴니', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '류키다스', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '악취화', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '캠파크티', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     The_Dravanian_Hinterlands: [
         {level: '58', hunt: true, name: '실잠자리', location: '저지 드라바니아', coordinate: '( 24.5, 21.1 )', drop: '&nbsp'},
@@ -276,6 +288,10 @@ let DATA = {
         {level: '59', hunt: true, name: '포록고', location: '저지 드라바니아', coordinate: '( 12.4, 34.6 )', drop: '&nbsp'},
         {level: '59', hunt: true, name: '비페리케라스', location: '저지 드라바니아', coordinate: '( 22.6, 37.9 )', drop: '&nbsp'},
         {level: '59', hunt: true, name: '코카트리스', location: '저지 드라바니아', coordinate: '( 18.9, 35.0 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12876\' id=\'drop\' target=\'_blank\'>코카트리스 고기</a>'},
+        {level: '60', hunt: 'B', name: '프테고리투스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '기간토피테쿠스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '스톨라스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '기계병정 슬립킨크스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     Dravanian_Forelands: [
         {level: '52', hunt: true, name: '밴더스내치', location: '고지 드라바니아', coordinate: '( 32.8, 18.5 )', drop: '&nbsp'},
@@ -308,7 +324,11 @@ let DATA = {
         {level: '57', hunt: true, name: '로스 불꽃요격자', location: '고지 드라바니아', coordinate: '( 28.0, 36.3 )', drop: '&nbsp'},
         {level: '57', hunt: true, name: '로스 경작자', location: '고지 드라바니아', coordinate: '( 28.0, 36.3 )', drop: '&nbsp'},
         {level: '57', hunt: false, name: '금빛 밴더스내치', location: '고지 드라바니아', coordinate: '( 27.3, 7.9 )', drop: '&nbsp'},
-        {level: '57', hunt: false, name: '해골 에이비스', location: '고지 드라바니아', coordinate: '( 12.3, 38.0 )', drop: '&nbsp'}
+        {level: '57', hunt: false, name: '해골 에이비스', location: '고지 드라바니아', coordinate: '( 12.3, 38.0 )', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '덱스타', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '그나스 혜성요격자', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '파일라스터', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '와이번로드', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     The_Churning_Mists: [
         {level: '54', hunt: true, name: '로프켄', location: '드라바니아 구름바다', coordinate: '( 35.0, 33.1 )', drop: '&nbsp'},
@@ -332,6 +352,10 @@ let DATA = {
         {level: '56', hunt: true, name: '구름 에이비스', location: '드라바니아 구름바다', coordinate: '( 9.7, 36.8 )', drop: '&nbsp'},
         {level: '56', hunt: true, name: '핏빛 드래곤', location: '드라바니아 구름바다', coordinate: '( 26.0, 10.1 )', drop: 
         '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12571\' id=\'drop\' target=\'_blank\'>드래곤 생가죽</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12576\' id=\'drop\' target=\'_blank\'>드래곤 송곳니</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12630\' id=\'drop\' target=\'_blank\'>용족의 피</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12627\' id=\'drop\' target=\'_blank\'>드래곤의 비늘</a>'},
-        {level: '56', hunt: true, name: '변종 드래곤', location: '드라바니아 구름바다', coordinate: '( 8.1, 19.2 )', drop: '&nbsp'}
+        {level: '56', hunt: true, name: '변종 드래곤', location: '드라바니아 구름바다', coordinate: '( 8.1, 19.2 )', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '허수아비 전갈', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '스키탈리스', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '부네', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '아가토스', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'}
     ]
 };
