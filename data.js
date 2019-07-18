@@ -182,7 +182,8 @@ let DATA = {
         {level: '60', hunt: 'B', name: '크루제', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'B', name: '알티크', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '미르카', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'},
-        {level: '60', hunt: 'A', name: '류바', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'}
+        {level: '60', hunt: 'A', name: '류바', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'S', name: '카이저 베히모스', location: '커르다스 서부고지', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     Sea_of_Clouds: [
         {level: '50', hunt: true, name: '오브델라', location: '아발라시아 구름바다', coordinate: '( 26.2, 33.5 )', drop: '&nbsp'},
@@ -227,7 +228,8 @@ let DATA = {
         {level: '60', hunt: 'B', name: '스퀑크', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'B', name: '무용수 사누발리', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '엔켈라도스', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
-        {level: '60', hunt: 'A', name: '시시우틀', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'}
+        {level: '60', hunt: 'A', name: '시시우틀', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'S', name: '극락조', location: '아발라시아 구름바다', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     Azys_Lla: [
         {level: '59', hunt: true, name: '메라시디아 드래고네트', location: '아지스 라', coordinate: '( 6.8, 35.4 )', drop: '&nbsp'},
@@ -265,7 +267,8 @@ let DATA = {
         {level: '60', hunt: 'B', name: '옴니', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'B', name: '류키다스', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '악취화', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'},
-        {level: '60', hunt: 'A', name: '캠파크티', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'}
+        {level: '60', hunt: 'A', name: '캠파크티', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'S', name: '레우크로타', location: '아지스 라', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     The_Dravanian_Hinterlands: [
         {level: '58', hunt: true, name: '실잠자리', location: '저지 드라바니아', coordinate: '( 24.5, 21.1 )', drop: '&nbsp'},
@@ -291,7 +294,8 @@ let DATA = {
         {level: '60', hunt: 'B', name: '프테리고투스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'B', name: '기간토피테쿠스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '스톨라스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
-        {level: '60', hunt: 'A', name: '기계병정 슬립킨크스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'}
+        {level: '60', hunt: 'A', name: '기계병정 슬립킨크스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'A', name: '창백의 기수', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     Dravanian_Forelands: [
         {level: '52', hunt: true, name: '밴더스내치', location: '고지 드라바니아', coordinate: '( 32.8, 18.5 )', drop: '&nbsp'},
@@ -328,7 +332,8 @@ let DATA = {
         {level: '60', hunt: 'B', name: '덱스타', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'B', name: '그나스 혜성요격자', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '파일라스터', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
-        {level: '60', hunt: 'A', name: '와이번로드', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'}
+        {level: '60', hunt: 'A', name: '와이번로드', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'S', name: '센무르', location: '고지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     The_Churning_Mists: [
         {level: '54', hunt: true, name: '로프켄', location: '드라바니아 구름바다', coordinate: '( 35.0, 33.1 )', drop: '&nbsp'},
@@ -356,6 +361,7 @@ let DATA = {
         {level: '60', hunt: 'B', name: '허수아비전갈', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'B', name: '스키탈리스', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '부네', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
-        {level: '60', hunt: 'A', name: '아가토스', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'}
+        {level: '60', hunt: 'A', name: '아가토스', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'S', name: '간다르바', location: '드라바니아 구름바다', coordinate: '지도 참조', drop: '&nbsp'}
     ]
 };
