@@ -179,7 +179,7 @@ input:focus{
     color: rgba(240, 248, 255, 0.733);
 }
 .td_name {
-    width: 27%;
+    width: 26%;
     text-align: left;
     padding-left: 10px;
 }
@@ -188,6 +188,13 @@ input:focus{
     font-weight: bold;
     background-color: aliceblue;
     transition: all 0.5s linear;
+}
+.td_hunt {
+    width: 2%;
+}
+.td_hunt img{
+    width: 75%;
+    margin: auto 0 auto 3px;
 }
 .td_location {
     width: 25%;
@@ -201,7 +208,7 @@ input:focus{
     font-size: 14px;
 }
 .td_drop {
-    width: 25%;
+    width: 24%;
     text-align: left;
     line-height: 160%;
     padding-top: 10px;

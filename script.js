@@ -28,7 +28,7 @@ submit.addEventListener('click', (event) => {
     resultsElement.innerHTML = '';
     let formData = new FormData(form);
     let keywords = formData.get('keywords');
-    let exception = /[a-zA-Z/?=]/;
+    let exception = /[a-zA-Z/?=&]/;
 
     if( keywords.trim().length === 0 || exception.test(keywords) || keywords === '.' || 
     Number(keywords) < 50 || Number(keywords) > 70 ) not_found();
@@ -48,6 +48,17 @@ submit.addEventListener('click', (event) => {
                     td_level.classList.add('td_level');
                     td_level.innerHTML = 'Lv.'+ DATA[key][i].level;
                     tr.appendChild(td_level);
+
+                    let td_hunt = document.createElement('td');
+                    td_hunt.classList.add('td_hunt');
+                    if( DATA[key][i].hunt === true )
+                    {
+                        let img = document.createElement('img');
+                        img.classList.add('hunt_icon');
+                        img.src = 'hunt_icon.png'
+                        td_hunt.appendChild(img);
+                    }
+                    tr.appendChild(td_hunt);
 
                     let td_name = document.createElement('td');
                     td_name.classList.add('td_name');
@@ -105,7 +116,7 @@ submit.addEventListener('click', (event) => {
                 }
         }
         for( let i = 0 ; i < resultsElement.childNodes.length ; i++ )
-            resultsElement.childNodes[i].firstChild.childNodes[1].onclick = viewMap;
+            resultsElement.childNodes[i].firstChild.childNodes[2].onclick = viewMap;
 
         if( count === 0 ) not_found();
         else
