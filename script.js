@@ -58,6 +58,20 @@ submit.addEventListener('click', (event) => {
                         img.src = 'hunt_icon.png'
                         td_hunt.appendChild(img);
                     }
+                    else if( DATA[key][i].hunt === 'B' )
+                    {
+                        let img = document.createElement('img');
+                        img.classList.add('SAB_icon');
+                        img.src = 'B_icon.png';
+                        td_hunt.appendChild(img);
+                    }
+                    else if( DATA[key][i].hunt === 'A' || DATA[key][i].hunt === 'S' )
+                    {
+                        let img = document.createElement('img');
+                        img.classList.add('SAB_icon');
+                        img.src = 'SA_icon.png';
+                        td_hunt.appendChild(img);
+                    }
                     tr.appendChild(td_hunt);
 
                     let td_name = document.createElement('td');

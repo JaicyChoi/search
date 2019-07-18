@@ -23,7 +23,12 @@ let DATA = {
         {level: '67', hunt: true, name: '칼리아나 크샤트리아', location: '기라바니아 변방지대', coordinate: '( 34.3, 25.3 )', drop: '&nbsp'},
         {level: '67', hunt: true, name: '칼리아나 수드라', location: '기라바니아 변방지대', coordinate: '( 34.3, 25.3 )', drop: '&nbsp'},
         {level: '67', hunt: true, name: '칼리아나 브라만', location: '기라바니아 변방지대', coordinate: '( 34.3, 25.3 )', drop: '&nbsp'},
-        {level: '67', hunt: true, name: '성스러운 마리드', location: '기라바니아 변방지대', coordinate: '( 34.3, 25.3 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=20002\' id=\'drop\' target=\'_blank\'>마리드 생가죽</a>'}
+        {level: '67', hunt: true, name: '성스러운 마리드', location: '기라바니아 변방지대', coordinate: '( 34.3, 25.3 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=20002\' id=\'drop\' target=\'_blank\'>마리드 생가죽</a>'},
+        {level: '70', hunt: 'B', name: '오젤룸', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '땅거미의 야미니', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '오르쿠스', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '얼', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'S', name: '우담바라', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'},
     ],
     The_Peaks: [
         {level: '60', hunt: true, name: '먼지 아닐라', location: '기라바니아 산악지대', coordinate: '( 21.6, 13.6 )', drop: '&nbsp'},
