@@ -197,7 +197,7 @@ let DATA = {
         {level: '59', name: '메라시디아 브로비냐크', location: '아지스 라', coordinate: '( 8.2, 32.7 )', drop: '&nbsp'},
         {level: '59', name: '메라시디아 암피프테레', location: '아지스 라', coordinate: '( 18.4, 31.3 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12572\' id=\'drop\' target=\'_blank\'>암피프테레 생가죽</a>'},
         {level: '59', name: '메라시디아 뷔브르', location: '아지스 라', coordinate: '( 14.5, 35.2 )', drop: '&nbsp'},
-        {level: '59', name: '메라시디아 긴수염용', location: '아지스 라', coordinate: '( 15.7, 29.0 )', drop: '&nbsp'},
+        {level: '59', name: '메라시디아 팔라크', location: '아지스 라', coordinate: '( 15.7, 29.0 )', drop: '&nbsp'},
         {level: '59', name: '하급 하이드라', location: '아지스 라', coordinate: '( 13.0, 33.0 )', drop: '&nbsp'},
         {level: '59', name: '똑딱이 회전전차', location: '아지스 라', coordinate: '( 11.5, 13.8 )', drop: '&nbsp'},
         {level: '59', name: '부엉이곰', location: '아지스 라', coordinate: '( 13.7, 12.1 )', drop: '&nbsp'},
