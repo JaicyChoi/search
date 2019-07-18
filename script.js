@@ -55,21 +55,21 @@ submit.addEventListener('click', (event) => {
                     {
                         let img = document.createElement('img');
                         img.classList.add('hunt_icon');
-                        img.src = 'hunt_icon.png'
+                        img.src = 'icon/hunt_icon.png'
                         td_hunt.appendChild(img);
                     }
                     else if( DATA[key][i].hunt === 'B' )
                     {
                         let img = document.createElement('img');
                         img.classList.add('SAB_icon');
-                        img.src = 'B_icon.png';
+                        img.src = 'icon/B_icon.png';
                         td_hunt.appendChild(img);
                     }
                     else if( DATA[key][i].hunt === 'A' || DATA[key][i].hunt === 'S' )
                     {
                         let img = document.createElement('img');
                         img.classList.add('SAB_icon');
-                        img.src = 'SA_icon.png';
+                        img.src = 'icon/SA_icon.png';
                         td_hunt.appendChild(img);
                     }
                     tr.appendChild(td_hunt);
@@ -168,7 +168,7 @@ function viewMap(){
 
     let info = document.createElement('div');
     info.classList.add('info');
-    
+
     if( this.nextSibling.nextSibling.innerText === '지도 참조' )
         info.innerText = this.innerText;
     else
