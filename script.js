@@ -205,7 +205,7 @@ $(window).scroll(function(event){
       $(".top_button").removeClass("show");
   }
 });
-/*Animation anchor*/
+
 $('a').click(function(){
   $('html, body').animate({
       scrollTop: $( $(this).attr('href') ).offset().top
