@@ -28,7 +28,7 @@ let DATA = {
         {level: '70', hunt: 'B', name: '땅거미의 야미니', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '70', hunt: 'A', name: '오르쿠스', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '70', hunt: 'A', name: '얼', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'},
-        {level: '70', hunt: 'S', name: '우담바라', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'S', name: '우담바라', location: '기라바니아 변방지대', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     The_Peaks: [
         {level: '60', hunt: true, name: '먼지 아닐라', location: '기라바니아 산악지대', coordinate: '( 21.6, 13.6 )', drop: '&nbsp'},
@@ -47,7 +47,12 @@ let DATA = {
         {level: '68', hunt: true, name: '콩가마토', location: '기라바니아 산악지대', coordinate: '( 14.6, 25.2 )', drop: '&nbsp'},
         {level: '68', hunt: true, name: '순종 그리핀', location: '기라바니아 산악지대', coordinate: '( 25.2, 24.7 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=20004\' id=\'drop\' target=\'_blank\'>순종 그리핀 생가죽</a>'},
         {level: '68', hunt: true, name: '잠멜', location: '기라바니아 산악지대', coordinate: '( 25.7, 29.7 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19875\' id=\'drop\' target=\'_blank\'>잠멜 고기</a>'},
-        {level: '68', hunt: true, name: '고원 에루카', location: '기라바니아 산악지대', coordinate: '( 24.3, 33.6 )', drop: '&nbsp'}
+        {level: '68', hunt: true, name: '고원 에루카', location: '기라바니아 산악지대', coordinate: '( 24.3, 33.6 )', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '부카부', location: '기라바니아 산악지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '독사의 종복', location: '기라바니아 산악지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '보크스타인', location: '기라바니아 산악지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '아크라부아멜루', location: '기라바니아 산악지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'S', name: '해골거미', location: '기라바니아 산악지대', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     The_Lochs: [
         {level: '69', hunt: true, name: '칼루크', location: '기라바니아 호반지대', coordinate: '( 10.8, 17.5 )', drop: '&nbsp'},
@@ -66,7 +71,12 @@ let DATA = {
         {level: '69', hunt: true, name: '포배드', location: '기라바니아 호반지대', coordinate: '( 23.3, 25.9 )', drop: '&nbsp'},
         {level: '69', hunt: true, name: '드루바', location: '기라바니아 호반지대', coordinate: '( 22.8, 22.9 )', drop: '&nbsp'},
         {level: '69', hunt: true, name: '탈라시나', location: '기라바니아 호반지대', coordinate: '( 19.6, 26.1 )', drop: '&nbsp'},
-        {level: '69', hunt: true, name: '산악 찰흙야수', location: '기라바니아 호반지대', coordinate: '( 5.6, 26.3 )', drop: '&nbsp'}
+        {level: '69', hunt: true, name: '산악 찰흙야수', location: '기라바니아 호반지대', coordinate: '( 5.6, 26.3 )', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '마네스', location: '기라바니아 호반지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '키와', location: '기라바니아 호반지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '마히샤', location: '기라바니아 호반지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '루미나레', location: '기라바니아 호반지대', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'S', name: '빛과 소금', location: '기라바니아 호반지대', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     Ruby_Sea: [
         {level: '62', hunt: true, name: '해마', location: '홍옥해', coordinate: '( 30.0, 38.3 )', drop: '&nbsp'},
@@ -87,7 +97,12 @@ let DATA = {
         {level: '63', hunt: false, name: '거단', location: '홍옥해', coordinate: '( 8.5, 6.2 )', drop: '&nbsp'},
         {level: '63', hunt: true, name: '꿈고둥', location: '홍옥해', coordinate: '( 25.3, 26.9 )', drop: '&nbsp'},
         {level: '63', hunt: true, name: '꿈고둥 알맹이', location: '홍옥해', coordinate: '( 25.3, 26.9 )', drop: '&nbsp'},
-        {level: '63', hunt: true, name: '붉은뿔부리', location: '홍옥해', coordinate: '( 34.3, 23.0 )', drop: '&nbsp'}
+        {level: '63', hunt: true, name: '붉은뿔부리', location: '홍옥해', coordinate: '( 34.3, 23.0 )', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '검호 가우키', location: '홍옥해', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '우부메', location: '홍옥해', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '선박 유령', location: '홍옥해', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '귀신 꿈고둥', location: '홍옥해', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'S', name: '오키나', location: '홍옥해', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     YANXIA: [
         {level: '64', hunt: true, name: '미노비', location: '얀샤', coordinate: '( 33.1, 17.2 )', drop: '&nbsp'},
@@ -109,7 +124,12 @@ let DATA = {
         {level: '67', hunt: true, name: '에비스 나마즈오', location: '얀샤', coordinate: '( 29.0, 7.9 )', drop: '&nbsp'},
         {level: '67', hunt: false, name: '흰날개 붉은뿔부리', location: '얀샤', coordinate: '( 20.2, 13.6 )', drop: '&nbsp'},
         {level: '67', hunt: true, name: '마가츠 코자', location: '얀샤', coordinate: '( 18.7, 10.5 )', drop: '&nbsp'},
-        {level: '67', hunt: true, name: '마가츠 키요후사', location: '얀샤', coordinate: '( 18.7, 10.5 )', drop: '&nbsp'}
+        {level: '67', hunt: true, name: '마가츠 키요후사', location: '얀샤', coordinate: '( 18.7, 10.5 )', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '뇌격의 교라이', location: '얀샤', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '데이다라', location: '얀샤', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '가자수라', location: '얀샤', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '앙가다', location: '얀샤', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'S', name: '감마', location: '얀샤', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     AZIM_STEPPE: [
         {level: '65', hunt: true, name: '긴털들소', location: '아짐 대초원', coordinate: '( 30.2, 30.1 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19873\' id=\'drop\' target=\'_blank\'>긴털들소 앞다릿살</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19921\' id=\'drop\' target=\'_blank\'>긴털들소 뿔</a>'},
@@ -127,7 +147,12 @@ let DATA = {
         {level: '66', hunt: false, name: '초원 아날라', location: '아짐 대초원', coordinate: '( 14.6, 30.8 )', drop: '&nbsp'},
         {level: '66', hunt: false, name: '굴로굴로', location: '아짐 대초원', coordinate: '( 13.6, 27.3 )', drop: '&nbsp'},
         {level: '66', hunt: true, name: '바르스', location: '아짐 대초원', coordinate: '( 12.0, 22.8 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=20001\' id=\'drop\' target=\'_blank\'>호랑이 생가죽</a>'},
-        {level: '66', hunt: true, name: '마탕가', location: '아짐 대초원', coordinate: '( 10.0, 20.1 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=20002\' id=\'drop\' target=\'_blank\'>마리드 생가죽</a>'}
+        {level: '66', hunt: true, name: '마탕가', location: '아짐 대초원', coordinate: '( 10.0, 20.1 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=20002\' id=\'drop\' target=\'_blank\'>마리드 생가죽</a>'},
+        {level: '70', hunt: 'B', name: '쿠르마', location: '아짐 대초원', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'B', name: '아스왕', location: '아짐 대초원', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '기리메칼라', location: '아짐 대초원', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'A', name: '솜', location: '아짐 대초원', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '70', hunt: 'S', name: '오르가나', location: '아짐 대초원', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     Coerthas_Western_Highlands: [
         {level: '50', hunt: true, name: '베르그투르스', location: '커르다스 서부고지', coordinate: '( 31.6, 24.3 )', drop: '&nbsp'},

@@ -168,7 +168,11 @@ function viewMap(){
 
     let info = document.createElement('div');
     info.classList.add('info');
-    info.innerText = this.innerText + ' ' + this.nextSibling.nextSibling.innerText;
+    
+    if( this.nextSibling.nextSibling.innerText === '지도 참조' )
+        info.innerText = this.innerText;
+    else
+        info.innerText = this.innerText + ' ' + this.nextSibling.nextSibling.innerText;
 
     layer_content.appendChild(info);
     layer_content.appendChild(img);
