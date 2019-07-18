@@ -288,7 +288,7 @@ let DATA = {
         {level: '59', hunt: true, name: '포록고', location: '저지 드라바니아', coordinate: '( 12.4, 34.6 )', drop: '&nbsp'},
         {level: '59', hunt: true, name: '비페리케라스', location: '저지 드라바니아', coordinate: '( 22.6, 37.9 )', drop: '&nbsp'},
         {level: '59', hunt: true, name: '코카트리스', location: '저지 드라바니아', coordinate: '( 18.9, 35.0 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12876\' id=\'drop\' target=\'_blank\'>코카트리스 고기</a>'},
-        {level: '60', hunt: 'B', name: '프테고리투스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '60', hunt: 'B', name: '프테리고투스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'B', name: '기간토피테쿠스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '스톨라스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '60', hunt: 'A', name: '기계병정 슬립킨크스', location: '저지 드라바니아', coordinate: '지도 참조', drop: '&nbsp'}
