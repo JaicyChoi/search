@@ -56,7 +56,7 @@ let DATA = {
         {level: '70', hunt: 'S', name: '해골거미', location: '기라바니아 산악지대', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     The_Lochs: [
-        {level: '69', hunt: true, name: '칼루크', location: '기라바니아 호반지대', coordinate: '( 10.8, 17.5 )', drop: '&nbsp'},
+        {level: '69', hunt: true, name: '칼루크', location: '기라바니아 호반지대', coordinate: '( 10.8, 17.5 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19933\' id=\'drop\' target=\'_blank\'>느티나무 원목</a>'},
         {level: '69', hunt: true, name: '로흐 거머리', location: '기라바니아 호반지대', coordinate: '( 17.2, 14.6 )', drop: '&nbsp'},
         {level: '69', hunt: true, name: '로흐 낭카', location: '기라바니아 호반지대', coordinate: '( 17.4, 16.1 )', drop: '&nbsp'},
         {level: '69', hunt: true, name: '켈로네', location: '기라바니아 호반지대', coordinate: '( 26.2, 14.4 )', drop: '&nbsp'},
@@ -133,7 +133,8 @@ let DATA = {
         {level: '70', hunt: 'S', name: '감마', location: '얀샤', coordinate: '지도 참조', drop: '&nbsp'}
     ],
     AZIM_STEPPE: [
-        {level: '65', hunt: true, name: '긴털들소', location: '아짐 대초원', coordinate: '( 30.2, 30.1 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19873\' id=\'drop\' target=\'_blank\'>긴털들소 앞다릿살</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19921\' id=\'drop\' target=\'_blank\'>긴털들소 뿔</a>'},
+        {level: '65', hunt: true, name: '긴털들소', location: '아짐 대초원', coordinate: '( 30.2, 30.1 )', drop: 
+        '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19873\' id=\'drop\' target=\'_blank\'>긴털들소 앞다릿살</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19921\' id=\'drop\' target=\'_blank\'>긴털들소 뿔</a><br><a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19878\' id=\'drop\' target=\'_blank\'>초원 우유</a>'},
         {level: '65', hunt: true, name: '마타마타', location: '아짐 대초원', coordinate: '( 23.6, 13.6 )', drop: '&nbsp'},
         {level: '65', hunt: true, name: '훈 촐로오', location: '아짐 대초원', coordinate: '( 13.0, 14.0 )', drop: '&nbsp'},
         {level: '65', hunt: true, name: '모오 쇼보오', location: '아짐 대초원', coordinate: '( 23.7, 10.5 )', drop: '&nbsp'},
