@@ -41,7 +41,7 @@ let DATA = {
         {level: '61', hunt: true, name: '바위발톱', location: '기라바니아 산악지대', coordinate: '( 26.5, 8.2 )', drop: '&nbsp'},
         {level: '61', hunt: true, name: '기라바니아 쇠똥구리', location: '기라바니아 산악지대', coordinate: '( 25.0, 13.8 )', drop: '&nbsp'},
         {level: '61', hunt: false, name: '키키룬 고기싹둑이', location: '기라바니아 산악지대', coordinate: '( 26.7, 20.6 )', drop: '&nbsp'},
-        {level: '61', hunt: true, name: '루드수드', location: '기라바니아 산악지대', coordinate: '( 31.8, 9.0 )', drop: '&nbsp'},
+        {level: '61', hunt: true, name: '루드수드', location: '기라바니아 산악지대', coordinate: '( 31.8, 9.0 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19919\' id=\'drop\' target=\'_blank\'>무드수드 뿔</a>'},
         {level: '61', hunt: true, name: '대리석 요결석', location: '기라바니아 산악지대', coordinate: '( 35.5, 8.9 )', drop: '&nbsp'},
         {level: '68', hunt: false, name: '높은날개 큰메뚜기', location: '기라바니아 산악지대', coordinate: '( 14.0, 35.8 )', drop: '&nbsp'},
         {level: '68', hunt: true, name: '판테라', location: '기라바니아 산악지대', coordinate: '( 12.4, 31.1 )', drop: '&nbsp'},
