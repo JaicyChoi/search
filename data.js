@@ -138,7 +138,7 @@ let DATA = {
         {level: '65', hunt: true, name: '마타마타', location: '아짐 대초원', coordinate: '( 23.6, 13.6 )', drop: '&nbsp'},
         {level: '65', hunt: true, name: '훈 촐로오', location: '아짐 대초원', coordinate: '( 13.0, 14.0 )', drop: '&nbsp'},
         {level: '65', hunt: true, name: '모오 쇼보오', location: '아짐 대초원', coordinate: '( 23.7, 10.5 )', drop: '&nbsp'},
-        {level: '65', hunt: true, name: '매머드', location: '아짐 대초원', coordinate: '( 28.9, 17.5 )', drop: '&nbsp'},
+        {level: '65', hunt: true, name: '매머드', location: '아짐 대초원', coordinate: '( 28.9, 17.5 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=20002\' id=\'drop\' target=\'_blank\'>마리드 생가죽</a>'},
         {level: '65', hunt: true, name: '풀볼', location: '아짐 대초원', coordinate: '( 32.8, 21.0 )', drop: '&nbsp'},
         {level: '65', hunt: true, name: '초원 거단', location: '아짐 대초원', coordinate: '( 34.4, 23.8 )', drop: '&nbsp'},
         {level: '65', hunt: true, name: '초원 긴팔이', location: '아짐 대초원', coordinate: '( 28.8, 28.1 )', drop: '&nbsp'},
