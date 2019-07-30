@@ -34,7 +34,7 @@ let DATA = {
     The_Peaks: [
         {level: '60', hunt: true, name: '먼지 아닐라', location: '기라바니아 산악지대', coordinate: '( 21.6, 13.6 )', drop: '&nbsp'},
         {level: '60', hunt: false, name: '키키룬 고기냠냠이', location: '기라바니아 산악지대', coordinate: '( 17.3, 15.9 )', drop: '&nbsp'},
-        {level: '60', hunt: true, name: '반짝나비', location: '기라바니아 산악지대', coordinate: '( 13.2, 10.3 )', drop: '&nbsp'},
+        {level: '60', hunt: true, name: '반짝나비', location: '기라바니아 산악지대', coordinate: '( 13.2, 10.3 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19922\' id=\'drop\' target=\'_blank\'>비늘가루</a>'},
         {level: '60', hunt: true, name: '기라바니아 뿔부리', location: '기라바니아 산악지대', coordinate: '( 10.1, 7.5 )', drop: '&nbsp'},
         {level: '60', hunt: true, name: '큰메뚜기', location: '기라바니아 산악지대', coordinate: '( 20.2, 7.4 )', drop: '&nbsp'},
         {level: '60', hunt: true, name: '핏빛날개나방', location: '기라바니아 산악지대', coordinate: '( 17.2, 11.0 )', drop: '&nbsp'},
@@ -173,7 +173,7 @@ let DATA = {
         {level: '51', hunt: true, name: '얼음 지휘관', location: '커르다스 서부고지', coordinate: '( 10.7, 14.5 )', drop: '&nbsp'},
         {level: '51', hunt: true, name: '젤라토', location: '커르다스 서부고지', coordinate: '( 11.6, 18.9 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12635\' id=\'drop\' target=\'_blank\'>젤라토 살</a>'},
         {level: '51', hunt: true, name: '진물', location: '커르다스 서부고지', coordinate: '( 16.6, 20.1 )', drop: '&nbsp'},
-        {level: '56', hunt: false, name: '윈드두르스', location: '커르다스 서부고지', coordinate: '( 9.6, 9.5 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=5439\' id=\'drop\' target=\'_blank\'>오거의 뿔</a>'},
+        {level: '56', hunt: false, name: '빈드두르스', location: '커르다스 서부고지', coordinate: '( 9.6, 9.5 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=5439\' id=\'drop\' target=\'_blank\'>오거의 뿔</a>'},
         {level: '56', hunt: true, name: '내륙 투르수스', location: '커르다스 서부고지', coordinate: '( 31.6, 8.0 )', drop: '&nbsp'},
         {level: '56', hunt: false, name: '대형 아르케오니스', location: '커르다스 서부고지', coordinate: '( 35.2, 18.1 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12568\' id=\'drop\' target=\'_blank\'>아르케오니스 생가죽</a>'},
         {level: '56', hunt: false, name: '소르베', location: '커르다스 서부고지', coordinate: '( 16.8, 26.4 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=12635\' id=\'drop\' target=\'_blank\'>젤라토 살</a>'},
