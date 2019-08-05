@@ -69,7 +69,7 @@ let DATA = {
         {level: '69', hunt: false, name: '염호 다라', location: '기라바니아 호반지대', coordinate: '( 13.2, 29.7 )', drop: '&nbsp'},
         {level: '69', hunt: true, name: '아바돈', location: '기라바니아 호반지대', coordinate: '( 19.1, 31.9 )', drop: '&nbsp'},
         {level: '69', hunt: true, name: '베파르', location: '기라바니아 호반지대', coordinate: '( 24.2, 30.3 )', drop: '&nbsp'},
-        {level: '69', hunt: true, name: '포배드', location: '기라바니아 호반지대', coordinate: '( 23.3, 25.9 )', drop: '&nbsp'},
+        {level: '69', hunt: true, name: '포배드', location: '기라바니아 호반지대', coordinate: '( 23.3, 25.9 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=5518\' id=\'drop\' target=\'_blank\'>암염</a>'},
         {level: '69', hunt: true, name: '드루바', location: '기라바니아 호반지대', coordinate: '( 22.8, 22.9 )', drop: '&nbsp'},
         {level: '69', hunt: true, name: '탈라시나', location: '기라바니아 호반지대', coordinate: '( 19.6, 26.1 )', drop: '&nbsp'},
         {level: '69', hunt: true, name: '산악 찰흙야수', location: '기라바니아 호반지대', coordinate: '( 5.6, 26.3 )', drop: '&nbsp'},
