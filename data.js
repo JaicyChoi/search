@@ -48,7 +48,7 @@ let DATA = {
         {level: '68', hunt: true, name: '콩가마토', location: '기라바니아 산악지대', coordinate: '( 14.6, 25.2 )', drop: '&nbsp'},
         {level: '68', hunt: true, name: '순종 그리핀', location: '기라바니아 산악지대', coordinate: '( 25.2, 24.7 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=20004\' id=\'drop\' target=\'_blank\'>순종 그리핀 생가죽</a>'},
         {level: '68', hunt: true, name: '잠멜', location: '기라바니아 산악지대', coordinate: '( 25.7, 29.7 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19875\' id=\'drop\' target=\'_blank\'>잠멜 고기</a>'},
-        {level: '68', hunt: true, name: '고원 에루카', location: '기라바니아 산악지대', coordinate: '( 24.3, 33.6 )', drop: '&nbsp'},
+        {level: '68', hunt: true, name: '고원 에루카', location: '기라바니아 산악지대', coordinate: '( 24.3, 33.6 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19989\' id=\'drop\' target=\'_blank\'>쌍고치</a>'},
         {level: '70', hunt: 'B', name: '부카부', location: '기라바니아 산악지대', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '70', hunt: 'B', name: '독사의 종복', location: '기라바니아 산악지대', coordinate: '지도 참조', drop: '&nbsp'},
         {level: '70', hunt: 'A', name: '보크스타인', location: '기라바니아 산악지대', coordinate: '지도 참조', drop: '&nbsp'},
