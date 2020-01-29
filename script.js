@@ -31,7 +31,7 @@ submit.addEventListener('click', (event) => {
     let exception = /[a-zA-Z/?=&]/;
 
     if( keywords.trim().length === 0 || exception.test(keywords) || keywords === '.' || 
-    Number(keywords) < 50 || Number(keywords) > 70 ) not_found();
+    Number(keywords) < 50 || Number(keywords) > 80 ) not_found();
     else
     {
         let count = 0;
