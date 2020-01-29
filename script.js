@@ -58,14 +58,14 @@ submit.addEventListener('click', (event) => {
                         img.src = 'icon/hunt_icon.png'
                         td_hunt.appendChild(img);
                     }
-                    else if( DATA[key][i].hunt === 'B' )
+                    else if( DATA[key][i].hunt === 'B' || DATA[key][i].hunt === 'T' )
                     {
                         let img = document.createElement('img');
                         img.classList.add('SAB_icon');
                         img.src = 'icon/B_icon.png';
                         td_hunt.appendChild(img);
                     }
-                    else if( DATA[key][i].hunt === 'A' || DATA[key][i].hunt === 'S' )
+                    else if( DATA[key][i].hunt === 'A' || DATA[key][i].hunt === 'S' || DATA[key][i].hunt === 'SS' )
                     {
                         let img = document.createElement('img');
                         img.classList.add('SAB_icon');
@@ -152,8 +152,19 @@ function viewMap(){
     img.classList.add('.map');
     let found = false;
 
+    //handling overlapped monster name
     if( this.nextSibling.innerText === '아지스 라' )
         img.src = 'map/Azys_Lla/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '레이크랜드' )
+        img.src = 'map/Lakeland/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '라케티카 대삼림' )
+        img.src = 'map/The_Raktika_Greatwood/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '일 메그' )
+        img.src = 'map/Il_Mheg/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '콜루시아 섬' )
+        img.src = 'map/Kholusia/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '템페스트' )
+        img.src = 'map/The_Tempest/' + this.innerText + '.jpg';
     else
         for( let key in DATA)
         {

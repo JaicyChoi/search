@@ -1,4 +1,58 @@
 let DATA = {
+    Amh_Araeng: [
+        {level: '80', hunt: 'B', name: '학살 곡예마', location: '아므 아랭', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'B', name: '우물 지렁이', location: '아므 아랭', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'T', name: '면죄된 험담', location: '아므 아랭', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '말리크텐더', location: '아므 아랭', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '슈가르', location: '아므 아랭', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'S', name: '타르키아', location: '아므 아랭', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'SS', name: '면죄된 폭동', location: '아므 아랭', coordinate: '지도 참조', drop: '&nbsp'}
+    ],
+    Lakeland: [
+        {level: '80', hunt: 'B', name: '이츠파팔로틀', location: '레이크랜드', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'B', name: '털보 오소리', location: '레이크랜드', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'T', name: '면죄된 험담', location: '레이크랜드', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '너클라비', location: '레이크랜드', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '나리폰', location: '레이크랜드', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'S', name: '티거', location: '레이크랜드', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'SS', name: '면죄된 폭동', location: '레이크랜드', coordinate: '지도 참조', drop: '&nbsp'}
+    ],
+    The_Raktika_Greatwood: [
+        {level: '80', hunt: 'B', name: '지능계발자', location: '라케티카 대삼림', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'B', name: '파차마마', location: '라케티카 대삼림', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'T', name: '면죄된 험담', location: '라케티카 대삼림', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '숲원인', location: '라케티카 대삼림', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '수파이', location: '라케티카 대삼림', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'S', name: '이쉬타브', location: '라케티카 대삼림', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'SS', name: '면죄된 폭동', location: '라케티카 대삼림', coordinate: '지도 참조', drop: '&nbsp'},
+    ],
+    Il_Mheg: [
+        {level: '80', hunt: 'B', name: '도모보이', location: '일 메그', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'B', name: '불팡구에', location: '일 메그', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'T', name: '면죄된 험담', location: '일 메그', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '진흙인간', location: '일 메그', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '폴디아', location: '일 메그', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'S', name: '아글라오페', location: '일 메그', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'SS', name: '면죄된 폭동', location: '일 메그', coordinate: '지도 참조', drop: '&nbsp'},
+    ],
+    Kholusia: [
+        {level: '80', hunt: 'B', name: '깡다구', location: '콜루시아 섬', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'B', name: '콕시그뤼', location: '콜루시아 섬', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'T', name: '면죄된 험담', location: '콜루시아 섬', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '후라칸', location: '콜루시아 섬', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '작은 살인자', location: '콜루시아 섬', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'S', name: '면죄된 현학', location: '콜루시아 섬', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'SS', name: '면죄된 폭동', location: '콜루시아 섬', coordinate: '지도 참조', drop: '&nbsp'},
+    ],
+    The_Tempest: [
+        {level: '80', hunt: 'B', name: '부사제게', location: '템페스트', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'B', name: '맨손의 기우쉬 아스', location: '템페스트', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'T', name: '면죄된 험담', location: '템페스트', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '루살카', location: '템페스트', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'A', name: '바알', location: '템페스트', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'S', name: '구니트', location: '템페스트', coordinate: '지도 참조', drop: '&nbsp'},
+        {level: '80', hunt: 'SS', name: '면죄된 폭동', location: '템페스트', coordinate: '지도 참조', drop: '&nbsp'},
+    ],
     The_Fringes: [
         {level: '60', hunt: true, name: '례쉬', location: '기라바니아 변방지대', coordinate: '( 11.0, 13.6 )', drop: '<a href=\'http://ff14.inven.co.kr/dataninfo/item/detail.php?code=19930\' id=\'drop\' target=\'_blank\'>너도밤나무 원목</a>'},
         {level: '60', hunt: true, name: '가젤매', location: '기라바니아 변방지대', coordinate: '( 11.8, 13.3 )', drop: '&nbsp'},
