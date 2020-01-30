@@ -35,78 +35,99 @@ submit.addEventListener('click', (event) => {
     else
     {
         let count = 0;
-        let makeTable = function (info)
-        {
-            let table = document.createElement('table');
-            table.classList.add('show_table');
-            let tr = document.createElement('tr');
-
-            let td_level = document.createElement('td');
-            td_level.classList.add('td_level');
-            td_level.innerHTML = 'Lv.'+ info.level;
-            tr.appendChild(td_level);
-
-            let td_hunt = document.createElement('td');
-            td_hunt.classList.add('td_hunt');
-            if( info.hunt === true )
-            {
-                let img = document.createElement('img');
-                img.classList.add('hunt_icon');
-                img.src = 'icon/hunt_icon.png'
-                td_hunt.appendChild(img);
-            }
-            else if( info.hunt === 'B' || info.hunt === 'T' )
-            {
-                let img = document.createElement('img');
-                img.classList.add('SAB_icon');
-                img.src = 'icon/B_icon.png';
-                td_hunt.appendChild(img);
-            }
-            else if( info.hunt === 'A' || info.hunt === 'S' || info.hunt === 'SS' )
-            {
-                let img = document.createElement('img');
-                img.classList.add('SAB_icon');
-                img.src = 'icon/SA_icon.png';
-                td_hunt.appendChild(img);
-            }
-            tr.appendChild(td_hunt);
-
-            let td_name = document.createElement('td');
-            td_name.classList.add('td_name');
-            td_name.innerHTML = '<a class=\'name\'>' + info.name + '</a>';
-            tr.appendChild(td_name);
-
-            let td_location = document.createElement('td');
-            td_location.classList.add('td_location');
-            td_location.innerHTML = info.location;
-            tr.appendChild(td_location);
-
-            let td_coordinate = document.createElement('td');
-            td_coordinate.classList.add('td_coordinate');
-            td_coordinate.innerHTML = info.coordinate;
-            tr.appendChild(td_coordinate);
-
-            let td_drop = document.createElement('td');
-            td_drop.classList.add('td_drop');
-            td_drop.innerHTML = info.drop;
-            if( !td_drop.innerHTML.includes('&nbsp') )
-                        td_drop.id='drop';
-            tr.appendChild(td_drop);
-
-            table.appendChild(tr);
-            resultsElement.appendChild(table);
-
-            count++;
-        }
         for( let key in DATA )
         {
             for( let i = 0 ; i < DATA[key].length ; i++ )
-            {
-                if( Boolean(Number(keywords)) === true && DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) )
-                    makeTable(DATA[key][i]);
-                else if( Boolean(Number(keywords)) === false && DATA[key][i].drop.includes(keywords, 102) )
-                    makeTable(DATA[key][i]);
-            }
+                if( DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) || DATA[key][i].drop.includes(keywords, 102) )
+                {
+                    let table = document.createElement('table');
+                    table.classList.add('show_table');
+                    let tr = document.createElement('tr');
+
+                    let td_level = document.createElement('td');
+                    td_level.classList.add('td_level');
+                    td_level.innerHTML = 'Lv.'+ DATA[key][i].level;
+                    tr.appendChild(td_level);
+
+                    let td_hunt = document.createElement('td');
+                    td_hunt.classList.add('td_hunt');
+                    if( DATA[key][i].hunt === true )
+                    {
+                        let img = document.createElement('img');
+                        img.classList.add('hunt_icon');
+                        img.src = 'icon/hunt_icon.png'
+                        td_hunt.appendChild(img);
+                    }
+                    else if( DATA[key][i].hunt === 'B' || DATA[key][i].hunt === 'T' )
+                    {
+                        let img = document.createElement('img');
+                        img.classList.add('SAB_icon');
+                        img.src = 'icon/B_icon.png';
+                        td_hunt.appendChild(img);
+                    }
+                    else if( DATA[key][i].hunt === 'A' || DATA[key][i].hunt === 'S' || DATA[key][i].hunt === 'SS' )
+                    {
+                        let img = document.createElement('img');
+                        img.classList.add('SAB_icon');
+                        img.src = 'icon/SA_icon.png';
+                        td_hunt.appendChild(img);
+                    }
+                    tr.appendChild(td_hunt);
+
+                    let td_name = document.createElement('td');
+                    td_name.classList.add('td_name');
+                    td_name.innerHTML = '<a class=\'name\'>' + DATA[key][i].name + '</a>';
+                    tr.appendChild(td_name);
+
+                    let td_location = document.createElement('td');
+                    td_location.classList.add('td_location');
+                    td_location.innerHTML = DATA[key][i].location;
+                    tr.appendChild(td_location);
+
+                    let td_coordinate = document.createElement('td');
+                    td_coordinate.classList.add('td_coordinate');
+                    td_coordinate.innerHTML = DATA[key][i].coordinate;
+                    tr.appendChild(td_coordinate);
+
+                    let td_drop = document.createElement('td');
+                    td_drop.classList.add('td_drop');
+                    td_drop.innerHTML = DATA[key][i].drop;
+                    if( !td_drop.innerHTML.includes('&nbsp') )
+                        td_drop.id='drop';
+                    tr.appendChild(td_drop);
+
+                    table.appendChild(tr);
+                    resultsElement.appendChild(table);
+
+                    count++;
+                    /*
+                    let table = document.createElement('table');
+                    table.classList.add('show_table');
+                    let tr = table.insertRow( table.rows.length );
+
+                    let td_level = tr.insertCell(0);
+                    td_level.classList.add('td_level');
+                    td_level.innerHTML = 'Lv.'+ DATA[key][i].level;
+
+                    let td_name = tr.insertCell(1);
+                    td_name.classList.add('td_name');
+                    td_name.innerHTML = '<a>' + DATA[key][i].name + '</a>';
+
+                    let td_location = tr.insertCell(2);
+                    td_location.classList.add('td_location');
+                    td_location.innerHTML = DATA[key][i].location;
+
+                    let td_coordinate = tr.insertCell(3);
+                    td_coordinate.classList.add('td_coordinate');
+                    td_coordinate.innerHTML = DATA[key][i].coordinate;
+
+                    let td_drop = tr.insertCell(4);
+                    td_drop.classList.add('td_drop');
+                    td_drop.innerHTML = DATA[key][i].drop;
+                    
+                    resultsElement.appendChild(table);
+                    */
+                }
         }
         for( let i = 0 ; i < resultsElement.childNodes.length ; i++ )
             resultsElement.childNodes[i].firstChild.childNodes[2].onclick = viewMap;
