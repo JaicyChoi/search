@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>필드 마물 검색</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="data.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media_query.css">
+  <link rel="shortcut icon" href="ico/favicon.ico">
+  <script src="js/data.js"></script>
 </head>
 <body id='top'>
     <a href='#top' class="top_button"><img src="icon/top_button.png"></a>
@@ -17,12 +21,12 @@
   </header>
     <form class="search-form" name="search">
       <input class="search" placeholder="마물 이름, 드랍 아이템, ..." type="text" name="keywords" onkeypress="enter(this.form)">
+      <div class="delete_value"></div>
       <button class="submit" id="search_button">Go</button>
     </form>
-    <div class="results">
-    </div>
-    <div id='footer'>Contact : Inven Jaicy / jaicychoi@gmail.com</div>
+    <div class="results"></div>
+  <footer>Contact : Inven Jaicy / jaicychoi@gmail.com</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

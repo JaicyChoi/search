@@ -1,0 +1,99 @@
+@media screen and (max-width: 980px){
+    .info{
+        width: 95%;
+    }
+    .map{
+        width: 95%;
+    }
+    .results{
+        width: 95%;
+    }
+    #layer_content:after{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        font-size: 0.9em;
+    }
+    .td_level{
+        width: 8%
+    }
+    .td_location{
+        width: 24%;
+    }
+    .td_drop{
+        width: 25%;
+    }
+    .top_button {
+        width: 45px;
+        bottom: 20px;
+        transform: translateY(95px);
+    }
+}
+@media screen and (max-width: 620px){
+    .title{
+        margin-top: 60px;
+    }
+    .search{
+        width: 75%;
+    }
+    .submit{
+/*         display: block; */
+    }
+    .td_level{
+        width: 8%
+    }
+    .td_name{
+        width: 32%;
+    }
+    .td_location{
+        width: 27%;
+    }
+    .td_drop{
+        width: 31%;
+    }
+    .hunt_icon{
+        width: 10px;
+        height: 15px;
+        padding-left: 3.5px;
+    }
+    .SAB_icon{
+        width: 13px;
+        min-width: 13px;
+        padding-left: 3.5px;
+    }
+    .td_coordinate{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        font-size: 0.85em;
+    }
+    .search{
+        width: 80%;
+    }
+    .show_table{
+        line-height: 16px;
+    }
+    .top_button{
+        width: 40px;
+        bottom: 20px;
+        transform: translateY(95px);
+    }
+}
+@media screen and (max-width: 400px){
+    .td_name{
+        width: 33%;
+    }
+    .name_align{
+        text-indent: 2px;
+    }
+    .td_location{
+        width: 28%;
+    }
+    .hunt_icon{
+        display: none;
+    }
+}

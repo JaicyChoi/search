@@ -1,20 +1,38 @@
-let form = document.querySelector('form');
-let search = document.querySelector('.search');
-let submit = document.querySelector('.submit');
-let resultsElement = document.querySelector('.results');
-let layer = document.querySelector('#layer');
-let layer_content = document.querySelector('#layer_content');
-let title = document.querySelector('.title');
+const form = document.querySelector('form');
+const search = document.querySelector('.search');
+const submit = document.querySelector('.submit');
+const resultsElement = document.querySelector('.results');
+const layer = document.querySelector('#layer');
+const layer_content = document.querySelector('#layer_content');
+const title = document.querySelector('.title');
+const delete_value = document.querySelector('.delete_value');
 
-title.onclick = function(){
+title.onclick = () => {
     resultsElement.innerHTML = '';
     search.value = '';
 }
 
 function enter(key){
     if(key.keyCode === 13)
-      search.submit();
+        search.submit();
 }
+
+//input focus event
+search.addEventListener('keyup', () => {
+    if( search.value )
+        delete_value.classList.add('show');
+    else
+        delete_value.classList.remove('show');
+});
+search.addEventListener('focus', () => {
+    if( search.value )
+        delete_value.classList.add('show');
+});
+delete_value.addEventListener('click', () => {
+    search.value = '';
+    delete_value.classList.remove('show');
+    search.focus();
+});
 
 function not_found(){
     let div = document.createElement('div');
@@ -24,29 +42,35 @@ function not_found(){
 }
 
 submit.addEventListener('click', (event) => {
+    search.blur();
     event.preventDefault();
     resultsElement.innerHTML = '';
     let formData = new FormData(form);
     let keywords = formData.get('keywords');
-    let exception = /[a-zA-Z/?=&]/;
+    // let exception = /[a-zA-Z/?=&]/;
+    let exception = /[c-ru-zC-RU-Z/?=&]/;
+    let count = 0;
 
     if( keywords.trim().length === 0 || exception.test(keywords) || keywords === '.' || 
     Number(keywords) < 50 || Number(keywords) > 80 ) not_found();
     else
     {
-        let count = 0;
-        let makeTable = function (info)
+        count = 0;
+        let makeTable = function(info)
         {
-            let table = document.createElement('table');
+            let table = document.createElement('div');
             table.classList.add('show_table');
-            let tr = document.createElement('tr');
+            let tr = document.createElement('ul');
 
-            let td_level = document.createElement('td');
+            let td_level = document.createElement('li');
+            let td_level_span = document.createElement('span');
             td_level.classList.add('td_level');
-            td_level.innerHTML = 'Lv.'+ info.level;
+            td_level_span.classList.add('level_align');
+            td_level_span.innerHTML = 'Lv.'+ info.level;
+            td_level.appendChild(td_level_span);
             tr.appendChild(td_level);
 
-            let td_hunt = document.createElement('td');
+            let td_hunt = document.createElement('li');
             td_hunt.classList.add('td_hunt');
             if( info.hunt === true )
             {
@@ -71,26 +95,35 @@ submit.addEventListener('click', (event) => {
             }
             tr.appendChild(td_hunt);
 
-            let td_name = document.createElement('td');
+            let td_name = document.createElement('li');
+            let td_name_span = document.createElement('span');
             td_name.classList.add('td_name');
-            td_name.innerHTML = '<a class=\'name\'>' + info.name + '</a>';
+            td_name_span.classList.add('name_align');
+            td_name_span.innerHTML = '<a class=\'name\'>' + info.name + '</a>';
+            td_name.appendChild(td_name_span);
             tr.appendChild(td_name);
 
-            let td_location = document.createElement('td');
+            let td_location = document.createElement('li');
+            let td_location_span = document.createElement('span');
             td_location.classList.add('td_location');
-            td_location.innerHTML = info.location;
+            td_location_span.classList.add('location_align');
+            td_location_span.innerHTML = info.location;
+            td_location.appendChild(td_location_span);
             tr.appendChild(td_location);
 
-            let td_coordinate = document.createElement('td');
+            let td_coordinate = document.createElement('li');
+            let td_coordinate_span = document.createElement('span');
             td_coordinate.classList.add('td_coordinate');
-            td_coordinate.innerHTML = info.coordinate;
+            td_coordinate_span.classList.add('coordinate_align');
+            td_coordinate_span.innerHTML = info.coordinate;
+            td_coordinate.appendChild(td_coordinate_span);
             tr.appendChild(td_coordinate);
 
-            let td_drop = document.createElement('td');
+            let td_drop = document.createElement('li');
             td_drop.classList.add('td_drop');
             td_drop.innerHTML = info.drop;
             if( !td_drop.innerHTML.includes('&nbsp') )
-                        td_drop.id='drop';
+                td_drop.id='drop';
             tr.appendChild(td_drop);
 
             table.appendChild(tr);
@@ -102,9 +135,11 @@ submit.addEventListener('click', (event) => {
         {
             for( let i = 0 ; i < DATA[key].length ; i++ )
             {
-                if( Boolean(Number(keywords)) === true && DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) )
+                if( keywords.toUpperCase() === DATA[key][i].hunt )
                     makeTable(DATA[key][i]);
-                else if( Boolean(Number(keywords)) === false && DATA[key][i].drop.includes(keywords, 102) )
+                else if( Boolean(Number(keywords)) === true && DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) )
+                    makeTable(DATA[key][i]);
+                else if( Boolean(Number(keywords)) === false && DATA[key][i].drop.includes(keywords.toUpperCase(), 72) )
                     makeTable(DATA[key][i]);
             }
         }
@@ -120,15 +155,20 @@ submit.addEventListener('click', (event) => {
             resultsElement.insertBefore(div, resultsElement.childNodes[0]);
         }
     }
+    if( count > 0 ){
+        let last_div = document.querySelectorAll('.show_table');
+        last_div[last_div.length-1].classList.add('bottom_line');
+    }
 });
 
 function viewMap(){
     //console.log(this.childNodes[0].firstChild.childNodes[1].innerHTML);
+    document.body.classList.add('scroll_lock');
     layer.style.visibility = 'visible';
     layer.style.opacity = 1;
     
     let img = document.createElement('img');
-    img.classList.add('.map');
+    img.classList.add('map');
     let found = false;
 
     //handling overlapped monster name
@@ -184,6 +224,7 @@ function viewMap(){
         layer.style.opacity = 0;
         layer_content.removeChild(info);
         layer_content.removeChild(img);
+        document.body.classList.remove('scroll_lock');
     }
 }
 

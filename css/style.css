@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300i,400i&display=swap');
+
+body {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 1em;
+    background-color: rgb(30, 32, 36);
+}
+body.scroll_lock{
+    overflow: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+#layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+#layer_content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.info{
+    position: relative;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.125em;
+    text-align: center;
+    width: 920px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 7px 7px 0px 0px;
+    text-shadow: 0 0 10px #fff, 0 0 15px rgb(255, 223, 165);
+    margin: 50px auto 0px;
+    background-color: rgba(55, 58, 61, 0.9);
+}
+.map{
+    position: relative;
+    width: 920px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#layer_content:after{
+    content: '아무 곳이나 클릭하거나 ESC를 누르면 결과 화면으로 돌아갑니다.';
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 920px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 3px 0;
+    margin: 5px 0 30px 0;
+    font-size: 0.8em;
+    background-color: #232323;
+}
+.name{
+    color: #11ABB0;
+}
+a {
+    text-decoration: none;
+    color: #11ABB0;
+}
+a:hover{
+    font-weight: bold;
+}
+#drop{
+    color:rgb(124, 185, 187);
+}
+.title{
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4.0625em;
+    color: white;
+}
+.search-form{
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.search{
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    text-indent: 20px;
+    height: 50px;
+    width: 500px;
+    font-size: 1.5625em;
+    border: none;
+    background-color:  rgba(68, 73, 85, 0.74);
+    border-radius: 15px;
+    color: rgba(255, 255, 255, 0.65);
+    font-family: 'Nanum Gothic', sans-serif;
+    ime-mode: active;
+}
+.delete_value{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    right: 27px;
+    top: 15px;
+    background: url(../icon/close_icon.png) no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+}
+.delete_value.show{
+    display: inline-block;
+}
+.search:focus{
+    outline:none;
+    color: white;
+    background-color: rgb(68, 73, 85)
+}
+.submit{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25em;
+    border: none;
+    color: #fff;
+    background-color: #11ABB0;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: -5px;
+    vertical-align: middle;
+    display: none;
+}
+.results{
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 980px;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+.not_found {
+    font-size: 1.875em;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.total {
+    text-align: right;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.375em;
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(194, 200, 206);
+    margin-bottom: 5px;
+    z-index: 2;
+}
+.show_table{
+    position: relative;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(62, 66, 88);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.bottom_line{
+    border-bottom: 1px solid rgb(62, 66, 88);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+ul:hover{
+    background-color: rgba(68, 73, 85, 0.356);
+}
+.td_level{
+    position: relative; 
+    width: 10%;
+    font-size: 0.8125em;
+    color: rgba(240, 248, 255, 0.733);
+}
+.level_align{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.td_name{
+    position: relative;
+    width: 24%;
+}
+.name_align{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    text-indent: 10px;
+}
+.td_name:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: aliceblue;
+    transition: all 0.5s linear;
+}
+
+.td_hunt{
+    position: relative;
+    width: 2%;
+}
+.hunt_icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 17px;
+}
+.SAB_icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    min-width: 17px;
+}
+.td_location{
+    position: relative;
+    width: 25%;
+    color: rgba(255, 255, 255, 0.85);
+}
+.location_align{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.td_coordinate{
+    position: relative;
+    width: 15%;
+    text-align: left;
+    color: rgba(240, 248, 255, 0.733);
+    font-size: 0.875em;
+}
+.coordinate_align{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.td_drop{
+    width: 24%;
+    text-align: left;
+    line-height: 160%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:10px;
+}
+#drop:hover{
+    background-color: aliceblue;
+    transition: all 0.5s ease;
+}
+.top_button {
+    display: block;
+    width: 50px;
+    position: fixed;
+    right: 16px;
+    bottom: 25px;
+    transform: translateY(100px);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.top_button img{
+    width: 100%;
+}
+.top_button.show {
+    transform: translateY(0);
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(30, 32, 36, 0.8);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 0.75em;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5), 0 0 7px rgb(5, 121, 255);
+}
