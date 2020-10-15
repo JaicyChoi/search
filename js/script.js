@@ -136,14 +136,14 @@ submit.addEventListener('click', (event) => {
 
                     if( drop_item.innerText.indexOf(keywords) >= 0){
                         if( drop_item.innerText.indexOf(keywords) === 0 ){
-                            drop_item.innerHTML = '<p class="drop_p"><span style="color:yellow; font-weight:bold">' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords), keywords.length) + '</span>' + drop_item.innerText.substr(keywords.length, drop_item.innerText.length) + '</p>';
+                            drop_item.innerHTML = '<span style="color:yellow; font-weight:bold">' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords), keywords.length) + '</span>' + drop_item.innerText.substr(keywords.length, drop_item.innerText.length);
                         }
                         else if( drop_item.innerText.indexOf(keywords) > 0 ){
                             if( drop_item.innerText.indexOf(keywords) + keywords.length === drop_item.innerText.length ){
-                                drop_item.innerHTML = '<p class="drop_p">' + drop_item.innerText.substr(0, drop_item.innerText.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords), keywords.length) + '</span></p>';
+                                drop_item.innerHTML = drop_item.innerText.substr(0, drop_item.innerText.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords), keywords.length) + '</span>';
                             }
                             else{
-                                drop_item.innerHTML = '<p class="drop_p">' + drop_item.innerText.substr(0, drop_item.innerText.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords), keywords.length) + '</span>' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords) + keywords.length, drop_item.innerText.length) + '</p>';
+                                drop_item.innerHTML = drop_item.innerText.substr(0, drop_item.innerText.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords), keywords.length) + '</span>' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords) + keywords.length, drop_item.innerText.length);
                             }
                         }
                     }
