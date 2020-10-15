@@ -10,6 +10,7 @@ const delete_value = document.querySelector('.delete_value');
 title.onclick = () => {
     resultsElement.innerHTML = '';
     search.value = '';
+    delete_value.classList.remove('show');
 }
 
 function enter(key){
@@ -67,6 +68,8 @@ submit.addEventListener('click', (event) => {
             td_level.classList.add('td_level');
             td_level_span.classList.add('level_align');
             td_level_span.innerHTML = 'Lv.'+ info.level;
+            if( keywords === info.level )
+                td_level_span.classList.add('highlight');
             td_level.appendChild(td_level_span);
             tr.appendChild(td_level);
 
@@ -100,6 +103,7 @@ submit.addEventListener('click', (event) => {
             td_name.classList.add('td_name');
             td_name_span.classList.add('name_align');
             td_name_span.innerHTML = '<a class=\'name\'>' + info.name + '</a>';
+            highlight_name(td_name_span, info.name, keywords);
             td_name.appendChild(td_name_span);
             tr.appendChild(td_name);
 
@@ -108,6 +112,7 @@ submit.addEventListener('click', (event) => {
             td_location.classList.add('td_location');
             td_location_span.classList.add('location_align');
             td_location_span.innerHTML = info.location;
+            highlight_location(td_location_span, info.location, keywords);
             td_location.appendChild(td_location_span);
             tr.appendChild(td_location);
 
@@ -120,10 +125,41 @@ submit.addEventListener('click', (event) => {
             tr.appendChild(td_coordinate);
 
             let td_drop = document.createElement('li');
+            let td_drop_span = document.createElement('span');
             td_drop.classList.add('td_drop');
-            td_drop.innerHTML = info.drop;
+            td_drop_span.classList.add('drop_align');
+
+            if( info.drop !== '&nbsp' ){
+                for( let i = 0 ; i < info.drop.length ; i++ ){
+                    let drop_item = document.createElement('p');
+                    drop_item.innerHTML = info.drop[i];
+
+                    if( drop_item.innerText.indexOf(keywords) >= 0){
+                        if( drop_item.innerText.indexOf(keywords) === 0 ){
+                            drop_item.innerHTML = '<p class="drop_p"><span style="color:yellow; font-weight:bold">' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords), keywords.length) + '</span>' + drop_item.innerText.substr(keywords.length, drop_item.innerText.length) + '</p>';
+                        }
+                        else if( drop_item.innerText.indexOf(keywords) > 0 ){
+                            if( drop_item.innerText.indexOf(keywords) + keywords.length === drop_item.innerText.length ){
+                                drop_item.innerHTML = '<p class="drop_p">' + drop_item.innerText.substr(0, drop_item.innerText.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords), keywords.length) + '</span></p>';
+                            }
+                            else{
+                                drop_item.innerHTML = '<p class="drop_p">' + drop_item.innerText.substr(0, drop_item.innerText.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords), keywords.length) + '</span>' + drop_item.innerText.substr(drop_item.innerText.indexOf(keywords) + keywords.length, drop_item.innerText.length) + '</p>';
+                            }
+                        }
+                    }
+
+                    td_drop.appendChild(drop_item);
+                }
+                for( let i = 0 ; i < info.drop.length ; i++ ){
+                    let drop_item = document.createElement('span');
+                    drop_item.innerHTML = info.drop[i];
+                    td_drop_span.appendChild(drop_item);
+                }
+            }
             if( !td_drop.innerHTML.includes('&nbsp') )
                 td_drop.id='drop';
+
+            td_drop.appendChild(td_drop_span);       
             tr.appendChild(td_drop);
 
             table.appendChild(tr);
@@ -139,8 +175,12 @@ submit.addEventListener('click', (event) => {
                     makeTable(DATA[key][i]);
                 else if( Boolean(Number(keywords)) === true && DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) )
                     makeTable(DATA[key][i]);
-                else if( Boolean(Number(keywords)) === false && DATA[key][i].drop.includes(keywords.toUpperCase(), 72) )
-                    makeTable(DATA[key][i]);
+                else if( Boolean(Number(keywords)) === false){
+                    for( let j = 0 ; j < DATA[key][i].drop.length ; j++ ){
+                        if( DATA[key][i].drop[j].includes(keywords.toUpperCase(), 72) )
+                            makeTable(DATA[key][i]);
+                    }
+                }
             }
         }
         for( let i = 0 ; i < resultsElement.childNodes.length ; i++ )
@@ -160,6 +200,38 @@ submit.addEventListener('click', (event) => {
         last_div[last_div.length-1].classList.add('bottom_line');
     }
 });
+
+function highlight_name(span, string, keywords){
+    if( string.indexOf(keywords) >= 0){
+        if( string.indexOf(keywords) === 0 ){
+            span.innerHTML = '<a class=\'name\'><span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>' + string.substr(keywords.length, string.length) + '</a>';
+        }
+        else if( string.indexOf(keywords) > 0 ){
+            if( string.indexOf(keywords) + keywords.length === string.length ){
+                span.innerHTML = '<a class=\'name\'>' + string.substr(0, string.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span></a>';
+            }
+            else{
+                span.innerHTML = '<a class=\'name\'>' + string.substr(0, string.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>' + string.substr(string.indexOf(keywords) + keywords.length, string.length) + '</a>';
+            }
+        }
+    }
+}
+
+function highlight_location(span, string, keywords){
+    if( string.indexOf(keywords) >= 0){
+        if( string.indexOf(keywords) === 0 ){
+            span.innerHTML = '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>' + string.substr(keywords.length, string.length);
+        }
+        else if( string.indexOf(keywords) > 0 ){
+            if( string.indexOf(keywords) + keywords.length === string.length ){
+                span.innerHTML = string.substr(0, string.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>';
+            }
+            else{
+                span.innerHTML = string.substr(0, string.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>' + string.substr(string.indexOf(keywords) + keywords.length, string.length);
+            }
+        }
+    }
+}
 
 function viewMap(){
     //console.log(this.childNodes[0].firstChild.childNodes[1].innerHTML);

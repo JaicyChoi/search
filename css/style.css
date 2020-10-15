@@ -206,6 +206,10 @@ ul:hover{
     align-items: center;
     margin-left: 5px;
 }
+.highlight{
+    color: yellow;
+    font-weight: bold;
+}
 .td_name{
     position: relative;
     width: 24%;
@@ -222,7 +226,7 @@ ul:hover{
 .td_name:hover{
     cursor: pointer;
     font-weight: bold;
-    background-color: aliceblue;
+/*     background-color: aliceblue; */
     transition: all 0.5s linear;
 }
 
@@ -272,15 +276,28 @@ ul:hover{
     align-items: center;
 }
 .td_drop{
+    position: relative;
     width: 24%;
+    min-height: 25px;
     text-align: left;
     line-height: 160%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left:10px;
 }
+.drop_align{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 10px;
+    opacity: 0;
+}
+.drop_align span{
+    display: block;
+}
 #drop:hover{
-    background-color: aliceblue;
+/*     background-color: aliceblue; */
     transition: all 0.5s ease;
 }
 .top_button {
