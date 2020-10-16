@@ -147,7 +147,6 @@ submit.addEventListener('click', (event) => {
                             }
                         }
                     }
-
                     td_drop.appendChild(drop_item);
                 }
                 for( let i = 0 ; i < info.drop.length ; i++ ){
