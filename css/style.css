@@ -71,15 +71,9 @@ body::-webkit-scrollbar {
 .name{
     color: #11ABB0;
 }
-a {
-    text-decoration: none;
-    color: #11ABB0;
-}
+
 a:hover{
     font-weight: bold;
-}
-#drop{
-    color:rgb(124, 185, 187);
 }
 .title{
     position: relative;
@@ -284,6 +278,10 @@ ul:hover{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left:10px;
+    color: rgb(124, 185, 187);
+}
+.td_drop a{
+    color: rgb(124, 185, 187);
 }
 .drop_align{
     position: absolute;
@@ -291,14 +289,16 @@ ul:hover{
     top: 50%;
     transform: translateY(-50%);
     padding-left: 10px;
-    opacity: 0;
+}
+#drop p.hover{
+    font-weight: bold
 }
 .drop_align span{
+    position: relative;
     display: block;
 }
-#drop:hover{
-/*     background-color: aliceblue; */
-    transition: all 0.5s ease;
+.drop_align span a{
+    color: transparent;
 }
 .top_button {
     display: block;

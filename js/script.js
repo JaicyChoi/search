@@ -108,12 +108,12 @@ submit.addEventListener('click', (event) => {
             tr.appendChild(td_name);
 
             let td_location = document.createElement('li');
-            let td_location_span = document.createElement('span');
+            let td_location_p = document.createElement('p');
             td_location.classList.add('td_location');
-            td_location_span.classList.add('location_align');
-            td_location_span.innerHTML = info.location;
-            highlight_location(td_location_span, info.location, keywords);
-            td_location.appendChild(td_location_span);
+            td_location_p.classList.add('location_align');
+            td_location_p.innerHTML = info.location;
+            highlight_location(td_location_p, info.location, keywords);
+            td_location.appendChild(td_location_p);
             tr.appendChild(td_location);
 
             let td_coordinate = document.createElement('li');
@@ -176,7 +176,7 @@ submit.addEventListener('click', (event) => {
                     makeTable(DATA[key][i]);
                 else if( Boolean(Number(keywords)) === false){
                     for( let j = 0 ; j < DATA[key][i].drop.length ; j++ ){
-                        if( DATA[key][i].drop[j].includes(keywords.toUpperCase(), 72) )
+                        if( DATA[key][i].drop[j].includes(keywords.toUpperCase(), 63) )
                             makeTable(DATA[key][i]);
                     }
                 }
@@ -198,7 +198,18 @@ submit.addEventListener('click', (event) => {
         let last_div = document.querySelectorAll('.show_table');
         last_div[last_div.length-1].classList.add('bottom_line');
     }
+    let td_drop = document.querySelectorAll('.td_drop');
+    td_drop.forEach(drop => drop.addEventListener('mouseenter', () => {
+        drop.lastChild.childNodes.forEach(child => child.addEventListener('mouseenter', () => {
+            drop.childNodes[get_index(child)].classList.add('hover');
+        }));
+        drop.lastChild.childNodes.forEach(child => child.addEventListener('mouseleave', () => {
+            drop.childNodes[get_index(child)].classList.remove('hover');
+        }));
+    }));
 });
+
+let get_index = elm => [...elm.parentNode.childNodes].indexOf(elm);
 
 function highlight_name(span, string, keywords){
     if( string.indexOf(keywords) >= 0){
@@ -219,14 +230,14 @@ function highlight_name(span, string, keywords){
 function highlight_location(span, string, keywords){
     if( string.indexOf(keywords) >= 0){
         if( string.indexOf(keywords) === 0 ){
-            span.innerHTML = '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>' + string.substr(keywords.length, string.length);
+            span.innerHTML = '<p class=\'location\'><span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>' + string.substr(keywords.length, string.length) + '</p>';
         }
         else if( string.indexOf(keywords) > 0 ){
             if( string.indexOf(keywords) + keywords.length === string.length ){
-                span.innerHTML = string.substr(0, string.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>';
+                span.innerHTML = '<p class=\'location\'>' + string.substr(0, string.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span></p>';
             }
             else{
-                span.innerHTML = string.substr(0, string.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>' + string.substr(string.indexOf(keywords) + keywords.length, string.length);
+                span.innerHTML = '<p class=\'location\'>' + string.substr(0, string.indexOf(keywords)) + '<span style="color:yellow; font-weight:bold">' + string.substr(string.indexOf(keywords), keywords.length) + '</span>' + string.substr(string.indexOf(keywords) + keywords.length, string.length) + '</p>';
             }
         }
     }
