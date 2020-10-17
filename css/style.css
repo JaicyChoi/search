@@ -311,6 +311,7 @@ ul:hover{
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
+    z-index: 1;
 }
 .top_button img{
     width: 100%;
