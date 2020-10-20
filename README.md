@@ -28,4 +28,4 @@ https://jaicychoi.github.io/search
 - 마물 수배서 대상 여부와 드랍 아이템은 기억에 의존해 작성되었으므로 잘못된 정보가 있다면 알려주시기 바랍니다.
 - 오타나 동작 오류 등 불편 사항이 있을 경우 알려주시기 바랍니다.
 
-Contact : Inven Jaicy / jaicychoi@gmail.com
+Contact : 초코보@그라하티아 / Inven Jaicy / jaicychoi@gmail.com
