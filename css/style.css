@@ -307,9 +307,9 @@ ul:hover{
     right: 16px;
     bottom: 25px;
     transform: translateY(100px);
-    -webkit-transition: all 1s ease;
+/*     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
+    -o-transition: all 1s ease; */
     transition: all 1s ease;
     z-index: 1;
 }
