@@ -1,5 +1,6 @@
 let DATA = {
     Amh_Araeng: [
+        {level: '70', hunt: true, name: '기가텐더', location: '아므 아랭', coordinate: '( 32.8, 10.0 )', drop: '&nbsp'},
         {level: '70', hunt: false, name: '톨바', location: '아므 아랭', coordinate: '( 31.6, 22.5 )', drop: '&nbsp'},
         {level: '70', hunt: true, name: '모래두더지', location: '아므 아랭', coordinate: '( 31.6, 22.5 )', drop: '&nbsp'},
         {level: '70', hunt: false, name: '응고지', location: '아므 아랭', coordinate: '( 32.9, 25.3 )', drop: '&nbsp'},
