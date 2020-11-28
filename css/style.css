@@ -39,6 +39,10 @@ body::-webkit-scrollbar {
     top: 0;
     width: 100%;
 }
+.notice_title{
+    font-size: 1.25em;
+    font-weight: 600;
+}
 .notice.show{
     height: 100%;
     z-index: 1;
