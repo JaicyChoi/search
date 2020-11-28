@@ -119,6 +119,9 @@ body::-webkit-scrollbar {
     background-size: contain;
     filter: invert(100%);
 }
+.close_btn:focus{
+    outline: none;
+}
 .outer_link{
     text-decoration: none;
     color: #3F51B5;
