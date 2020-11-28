@@ -6,6 +6,31 @@ const layer = document.querySelector('#layer');
 const layer_content = document.querySelector('#layer_content');
 const title = document.querySelector('.title');
 const delete_value = document.querySelector('.delete_value');
+const notice = document.querySelector('.notice');
+const notice_wrapper = document.querySelector('.notice_wrapper');
+const notice_btn = document.querySelector('.notice_btn');
+const content_text = document.querySelector('.content_text');
+const notice_content = document.querySelector('.notice_content');
+const close_btn = document.querySelector('.close_btn');
+const contents = document.querySelector('.contents');
+
+content_text.innerHTML = NOTICE[0];
+notice_btn.addEventListener('click', () => {
+    document.body.classList.add('scroll_lock');
+    notice.classList.add('show');
+    notice_wrapper.classList.add('show');
+    notice_content.classList.add('show');
+    title.classList.add('blur');
+    contents.classList.add('blur');
+});
+close_btn.addEventListener('click', () => {
+    document.body.classList.remove('scroll_lock');
+    notice.classList.remove('show');
+    notice_wrapper.classList.remove('show');
+    notice_content.classList.remove('show');
+    title.classList.remove('blur');
+    contents.classList.remove('blur');
+});
 
 title.onclick = () => {
     resultsElement.innerHTML = '';
@@ -49,14 +74,17 @@ submit.addEventListener('click', (event) => {
     let formData = new FormData(form);
     let keywords = formData.get('keywords');
     // let exception = /[a-zA-Z/?=&]/;
-    let exception = /[c-ru-zC-RU-Z/?=&]/;
+    let exception = /[c-hj-ruw-zC-HJ-RUW-Z/?=&]/;
     let count = 0;
+    let monster_name;
 
-    if( keywords.trim().length === 0 || exception.test(keywords) || keywords === '.' || 
-    Number(keywords) < 50 || Number(keywords) > 80 ) not_found();
+    if( keywords.trim().length === 0 || exception.test(keywords) || keywords === '.' || Number(keywords) > 80 ) not_found();
+    // if( keywords.trim().length === 0 || exception.test(keywords) || keywords === '.' || 
+    // Number(keywords) < 50 || Number(keywords) > 80 ) not_found();
     else
     {
         count = 0;
+        monster_name = null;
         let makeTable = function(info)
         {
             let table = document.createElement('div');
@@ -96,6 +124,13 @@ submit.addEventListener('click', (event) => {
                 img.src = 'icon/SA_icon.png';
                 td_hunt.appendChild(img);
             }
+            else if( info.hunt === 'log' )
+            {
+                let img = document.createElement('img');
+                img.classList.add('log_icon');
+                img.src = 'icon/hunt_log.png';
+                td_hunt.appendChild(img);
+            }
             tr.appendChild(td_hunt);
 
             let td_name = document.createElement('li');
@@ -103,7 +138,7 @@ submit.addEventListener('click', (event) => {
             td_name.classList.add('td_name');
             td_name_span.classList.add('name_align');
             td_name_span.innerHTML = '<a class=\'name\'>' + info.name + '</a>';
-            highlight_name(td_name_span, info.name, keywords);
+            highlight_name(td_name_span, info.name, keywords.toUpperCase());
             td_name.appendChild(td_name_span);
             tr.appendChild(td_name);
 
@@ -163,7 +198,7 @@ submit.addEventListener('click', (event) => {
 
             table.appendChild(tr);
             resultsElement.appendChild(table);
-
+            monster_name = info.name;
             count++;
         }
         for( let key in DATA )
@@ -172,11 +207,13 @@ submit.addEventListener('click', (event) => {
             {
                 if( keywords.toUpperCase() === DATA[key][i].hunt )
                     makeTable(DATA[key][i]);
-                else if( Boolean(Number(keywords)) === true && DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords) || DATA[key][i].location.includes(keywords) )
+                else if( keywords === '토벌' && DATA[key][i].hunt === 'log')
                     makeTable(DATA[key][i]);
-                else if( Boolean(Number(keywords)) === false){
+                else if( Boolean(Number(keywords)) === true && DATA[key][i].level === keywords || DATA[key][i].name.includes(keywords.toUpperCase()) || DATA[key][i].location.includes(keywords) )
+                    makeTable(DATA[key][i]);
+                else if( Boolean(Number(keywords)) === false ){
                     for( let j = 0 ; j < DATA[key][i].drop.length ; j++ ){
-                        if( DATA[key][i].drop[j].includes(keywords.toUpperCase(), 63) )
+                        if( DATA[key][i].name !== monster_name && DATA[key][i].drop[j].includes(keywords.toUpperCase(), 60) )
                             makeTable(DATA[key][i]);
                     }
                 }
@@ -254,7 +291,37 @@ function viewMap(){
     let found = false;
 
     //handling overlapped monster name
-    if( this.nextSibling.innerText === '아지스 라' )
+    if( this.nextSibling.innerText === '검은장막 숲 북부삼림' )
+        img.src = 'map/North_Shroud/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '검은장막 숲 동부삼림' )
+        img.src = 'map/East_Shroud/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '검은장막 숲 남부삼림' )
+        img.src = 'map/South_Shroud/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '저지 라노시아' )
+        img.src = 'map/Lower_La_Noscea/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '중부 라노시아' )
+        img.src = 'map/Middle_La_Noscea/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '서부 라노시아' )
+        img.src = 'map/Western_La_Noscea/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '외지 라노시아' )
+        img.src = 'map/Outer_La_Noscea/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '고지 라노시아' )
+        img.src = 'map/Upper_La_Noscea/' + this.innerText + '.jpg';
+    // else if( this.nextSibling.innerText === '중부 다날란' )
+    //     img.src = 'map/Central_Thanalan/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '서부 다날란' )
+        img.src = 'map/Western_Thanalan/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '동부 다날란' )
+        img.src = 'map/Eastern_Thanalan/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '남부 다날란' )
+        img.src = 'map/Southern_Thanalan/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '북부 다날란' )
+        img.src = 'map/Northern_Thanalan/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '모르도나' )
+        img.src = 'map/Mor_Dhona/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '커르다스 중앙고지' )
+        img.src = 'map/Coerthas_Central_Highlands/' + this.innerText + '.jpg';
+    else if( this.nextSibling.innerText === '아지스 라' )
         img.src = 'map/Azys_Lla/' + this.innerText + '.jpg';
     else if( this.nextSibling.innerText === '레이크랜드' )
         img.src = 'map/Lakeland/' + this.innerText + '.jpg';
