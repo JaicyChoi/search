@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean');
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300i,400i&display=swap');
 
-body {
+body{
     position: relative;
     float: left;
     width: 100%;
@@ -10,6 +10,9 @@ body {
     background-color: rgb(30, 32, 36);
 }
 body.scroll_lock{
+    overflow: hidden;
+}
+body.view_map{
     overflow: hidden;
 }
 body::-webkit-scrollbar {
@@ -33,29 +36,28 @@ body::-webkit-scrollbar {
     height: 100%;
     overflow: auto;
 }
-
-.notice{
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
 .notice_title{
     font-size: 1.25em;
     font-weight: 600;
 }
-.notice.show{
-    height: 100%;
-    z-index: 1;
-}
 .notice_wrapper{
-    position: relative;
+    position: absolute;
+    margin-top: 10%;
+    width: 840px;
     left: 50%;
-    width: 1200px;
     transform: translateX(-50%);
     transition: all .3s ease;
 }
 .notice_wrapper.show{
     z-index: 1;
+}
+.notice_btn_wrapper{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 980px;
+    z-index: 999;
 }
 .notice_btn{
     position: relative;
@@ -72,7 +74,6 @@ body::-webkit-scrollbar {
     color: rgba(255, 255, 255, 0.75);
     cursor: pointer;
     transition: all .15s ease;
-    z-index: 999;
 }
 .notice_btn:hover{
     background-color: rgb(17, 171, 176, 0.75);
@@ -84,8 +85,6 @@ body::-webkit-scrollbar {
 }
 .notice_content{
     position: relative;
-    margin: 10% auto 0;
-    width: 70%;
     height: 100%;
     color: black;
     background-color: rgba(255, 255, 255, 0.6);
@@ -127,7 +126,29 @@ body::-webkit-scrollbar {
     color: #3F51B5;
 }
 .contents{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     transition: all .75s ease-in-out;
+}
+.contents.show{
+    height: 100vh;
+}
+.contents.show:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+header{
+    position: relative;
+    width: 100%;
+    float: left;
 }
 .title.blur, .contents.blur{
     filter: blur(7px);

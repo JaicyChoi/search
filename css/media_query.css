@@ -1,9 +1,6 @@
 @media screen and (max-width:1200px){
-    .notice_wrapper{
-        width: 100%;
-    }
-    .notice_btn{
-        left: 5%;
+    .notice_wrapper, .notice_btn_wrapper{
+        width: 80%;
     }
 }
 @media screen and (max-width: 980px){

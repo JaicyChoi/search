@@ -1,3 +1,4 @@
+const header = document.querySelector('header');
 const form = document.querySelector('form');
 const search = document.querySelector('.search');
 const submit = document.querySelector('.submit');
@@ -6,7 +7,6 @@ const layer = document.querySelector('#layer');
 const layer_content = document.querySelector('#layer_content');
 const title = document.querySelector('.title');
 const delete_value = document.querySelector('.delete_value');
-const notice = document.querySelector('.notice');
 const notice_wrapper = document.querySelector('.notice_wrapper');
 const notice_btn = document.querySelector('.notice_btn');
 const content_text = document.querySelector('.content_text');
@@ -17,20 +17,24 @@ const contents = document.querySelector('.contents');
 content_text.innerHTML = NOTICE[0];
 notice_btn.addEventListener('click', () => {
     document.body.classList.add('scroll_lock');
-    notice.classList.add('show');
     notice_wrapper.classList.add('show');
     notice_content.classList.add('show');
     title.classList.add('blur');
     contents.classList.add('blur');
+    contents.classList.add('show');
 });
-close_btn.addEventListener('click', () => {
+close_btn.addEventListener('click', close_notice );
+contents.addEventListener('click', close_notice );
+header.addEventListener('click', close_notice);
+
+function close_notice(){
     document.body.classList.remove('scroll_lock');
-    notice.classList.remove('show');
     notice_wrapper.classList.remove('show');
     notice_content.classList.remove('show');
     title.classList.remove('blur');
     contents.classList.remove('blur');
-});
+    contents.classList.remove('show');        
+}
 
 title.onclick = () => {
     resultsElement.innerHTML = '';
@@ -282,7 +286,8 @@ function highlight_location(span, string, keywords){
 
 function viewMap(){
     //console.log(this.childNodes[0].firstChild.childNodes[1].innerHTML);
-    document.body.classList.add('scroll_lock');
+    document.body.classList.add('view_map');
+    // document.body.style.overflow = 'hidden';
     layer.style.visibility = 'visible';
     layer.style.opacity = 1;
     
@@ -373,7 +378,8 @@ function viewMap(){
         layer.style.opacity = 0;
         layer_content.removeChild(info);
         layer_content.removeChild(img);
-        document.body.classList.remove('scroll_lock');
+        document.body.classList.remove('view_map');
+        // document.body.style.overflow = 'auto';
     }
 }
 
