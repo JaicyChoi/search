@@ -84,6 +84,9 @@
         font-size: 0.97em;
         line-height: 25px;
     }
+    .notice_wrapper{
+        margin-top: 12.5%;
+    }
     .notice_content{
         padding: 25px 40px;
         max-height: 70vh;
