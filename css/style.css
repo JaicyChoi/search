@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 }
 .notice_wrapper{
     position: absolute;
-    margin-top: 10%;
+    margin-top: 125px;
     width: 840px;
     left: 50%;
     transform: translate(-50%, -15vh);
@@ -114,6 +114,9 @@ body::-webkit-scrollbar {
 }
 .notice_content::-webkit-scrollbar-thumb:hover{
     background: #555;
+    border-radius: 13.5px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
 }
 .content_text{
     overflow: auto;
