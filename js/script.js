@@ -10,7 +10,6 @@ const delete_value = document.querySelector('.delete_value');
 const notice_wrapper = document.querySelector('.notice_wrapper');
 const notice_btn = document.querySelector('.notice_btn');
 const content_text = document.querySelector('.content_text');
-const notice_content = document.querySelector('.notice_content');
 const close_btn = document.querySelector('.close_btn');
 const contents = document.querySelector('.contents');
 
@@ -18,7 +17,6 @@ content_text.innerHTML = NOTICE[0];
 notice_btn.addEventListener('click', () => {
     document.body.classList.add('scroll_lock');
     notice_wrapper.classList.add('show');
-    notice_content.classList.add('show');
     title.classList.add('blur');
     contents.classList.add('blur');
     contents.classList.add('show');
@@ -30,7 +28,6 @@ header.addEventListener('click', close_notice);
 function close_notice(){
     document.body.classList.remove('scroll_lock');
     notice_wrapper.classList.remove('show');
-    notice_content.classList.remove('show');
     title.classList.remove('blur');
     contents.classList.remove('blur');
     contents.classList.remove('show');        

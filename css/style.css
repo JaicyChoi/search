@@ -45,11 +45,15 @@ body::-webkit-scrollbar {
     margin-top: 10%;
     width: 840px;
     left: 50%;
-    transform: translateX(-50%);
-    transition: all .3s ease;
+    transform: translate(-50%, -15vh);
+    opacity: 0;
+/*     transition: all .3s ease; */
+    transition: all .75s ease-in-out;
 }
 .notice_wrapper.show{
     z-index: 1;
+    opacity: 1;
+    transform: translate(-50%, 0);
 }
 .notice_btn_wrapper{
     position: absolute;
@@ -70,7 +74,7 @@ body::-webkit-scrollbar {
     left: 0;
     top: 0;
     border: none;
-    border-radius: 0 0 5px 05px;
+    border-radius: 0 0 5px 5px;
     color: rgba(255, 255, 255, 0.75);
     cursor: pointer;
     transition: all .15s ease;
@@ -89,34 +93,43 @@ body::-webkit-scrollbar {
     color: black;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
-    padding: 40px 60px;
+    padding: 40px 20px 40px 60px;
     font-size: 0.97em;
     font-family: 'Nanum Gothic', sans-serif;
     line-height: 1.25em;
-    transform: translateY(-15vh);
-    opacity: 0;
-    transition: all .75s ease-in-out;
     max-height: 600px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
-.notice_content::-webkit-scrollbar {
-    display: none;
+.notice_content::-webkit-scrollbar{
+    width: 27px;
 }
-.notice_content.show{
-    opacity: 1;
-    transform: translateY(0);
+.notice_content::-webkit-scrollbar-track {
+    background: transparent;
+}
+.notice_content::-webkit-scrollbar-thumb {
+    background: #757575;
+    border-radius: 13.5px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+.notice_content::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+.content_text{
+    overflow: auto;
 }
 .close_btn{
     border: none;
     position: fixed;
-    right: 10px;
-    top: 10px;
+    right: 23px;
+    top: 11px;
     width: 25px;
     height: 25px;
     cursor: pointer;
     background: url(../icon/close_icon.png) no-repeat;
     background-size: contain;
     filter: invert(100%);
+    z-index: 1;
 }
 .close_btn:focus{
     outline: none;
