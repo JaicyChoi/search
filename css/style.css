@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;
@@ -230,6 +230,7 @@ a:hover{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 40px;
+    transition: all .3s ease;
 }
 .search{
     position: relative;
@@ -241,7 +242,7 @@ a:hover{
     width: 500px;
     font-size: 1.5625em;
     border: none;
-    background-color:  rgba(68, 73, 85, 0.74);
+    background-color:  rgba(68, 73, 85, 1);
     border-radius: 15px;
     color: rgba(255, 255, 255, 0.65);
     font-family: 'Nanum Gothic', sans-serif;
