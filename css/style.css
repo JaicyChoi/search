@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translateX(-50%);
     width: 980px;
-    z-index: 999;
+    z-index: 1;
 }
 .notice_btn{
     position: relative;
